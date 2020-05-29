@@ -1,0 +1,59 @@
+body{
+    background-image: url(/img/mountain.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.reiki-symbol {
+    max-width: 100px;
+}
+
+.reiki-section {
+    background-color: rgba(255, 255, 255, .7);
+    width: 80%;
+    margin: 6em auto;
+    padding: 1em;
+    box-shadow: 0.5px 0.5px 0.5em rgba(0,0,0,0.3);
+}
+
+.lead-word {
+    font-size: 1.3em;
+    color: var(--c-primary);
+}
+
+.list-items {
+    text-align: left;
+    font-size: 1.5em;
+    width: 40%;
+    margin:0 auto 1em auto;
+    line-height: 1.5;
+}
+
+.reiki-section p {
+    font-size: 1.5em;
+    color: var(--c-text);
+    line-height: 1.4;
+    padding: 2em;
+}
+
+@media screen and (max-width: 800px) {
+.reiki-section {
+    margin: 6em auto;
+    width: 100%;
+    padding: 0.25em;
+    box-shadow: 0.5px 0.5px 0.5em rgba(0,0,0,0.3);
+}
+
+.reiki-section p {
+    font-size: 1.5em;
+    line-height: 1.5;
+    padding: 1em;
+}
+
+.list-items {
+    width: 80%;
+    margin:0em auto 1em auto;
+}
+}
