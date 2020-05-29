@@ -1,0 +1,50 @@
+.contact-section {
+    background-color: var(--c-primary);
+    padding-top: 1em;
+}
+.contact-section p {
+    font-size: 1.4rem;
+}
+.contact-section-titles {
+    color: black;
+    text-decoration: underline;
+}
+.contact-section-titles-main {
+    color: black;
+}
+.white {
+    background-color: white;
+}
+.contact-icon{
+    margin-bottom: 0.5em;
+}
+.link {
+    color: rgb(48, 40, 40);
+    text-decoration: none;
+}
+.contact-img {
+    padding: 0;
+    max-width: 450px;
+}
+@media only screen and (min-width: 600px){
+    .contact-section-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 800px;
+        margin: 2em auto;
+   }
+    .contact-section p {
+        font-size: 1.3rem;
+   }
+    .white {
+        background-color: var(--c-primary);
+   }
+    .contact-section{
+        width: 50%;
+        margin: 10px auto;
+   }
+    .contact-img {
+        max-width: 400px;
+   }
+}
