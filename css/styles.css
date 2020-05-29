@@ -110,7 +110,6 @@ header{
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-left: 2em;
 }
 .logo-pic {
     max-width: 75px;
@@ -328,8 +327,6 @@ li.active {
     background-color: whitesmoke;
 }
 .welcome-title{
-   /* background-color: #EE6352;
-    */
     width: 100%;
     color: var(--c-primary);
 }
@@ -342,7 +339,6 @@ li.active {
     background-size: cover;
     background-position: center;
 }
-/* * Prefixed by https://autoprefixer.github.io * PostCSS: v7.0.29, * Autoprefixer: v9.7.6 * Browsers: last 4 version */
 .test-card {
     background-color: white;
     border-radius: 10px;
@@ -359,8 +355,7 @@ li.active {
     max-width: 100px;
     margin: 0.5em;
 }
-.test-wrap {
-}
+
 .hidden-item{
     opacity: 0;
     -webkit-transition: all 1.5s ease;
@@ -453,8 +448,6 @@ footer li {
         width: 100%;
         position: fixed;
         background-color: rgba(255, 255, 255, .9);
-       /* background-image: linear-gradient(45deg, var(--c-primary), lemonchiffon);
-        */
         right: -100%;
         -webkit-transition: all 1s ease;
         -o-transition: all 1s ease;
