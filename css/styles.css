@@ -351,6 +351,12 @@ li.active {
     -o-transition: 1.5s;
     transition: 1.5s 
 }
+
+.test-wrap{
+    margin-bottom: 2em;
+}
+
+
 .test-img {
     max-width: 100px;
     margin: 0.5em;
