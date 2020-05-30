@@ -1,6 +1,12 @@
+body{
+    background-color: rgb(194, 240, 240);
+}
+
 .contact-section {
-    background-color: var(--c-primary);
-    padding-top: 1em;
+    background-color: white;
+    padding-top: 2em;
+    padding-bottom: 2em;
+
 }
 .contact-section p {
     font-size: 1.4rem;
@@ -8,10 +14,13 @@
 .contact-section-titles {
     color: black;
     text-decoration: underline;
+
 }
 .contact-section-titles-main {
     color: black;
+    padding-top: 0;
 }
+
 .white {
     background-color: white;
 }
@@ -37,9 +46,9 @@
     .contact-section p {
         font-size: 1.3rem;
    }
-    .white {
+    /* .white {
         background-color: var(--c-primary);
-   }
+   } */
     .contact-section{
         width: 50%;
         margin: 10px auto;
