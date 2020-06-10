@@ -2,19 +2,18 @@
     background-color: white;
     padding-top: 2em;
     padding-bottom: 2em;
+    max-width: 600px;
+    min-width: 300px;
+    margin: 0 auto;
 }
 
 .contact-section p {
     font-size: 1.4rem;
 }
 
-.contact-section-titles {
-    color: black;
-    text-decoration: underline;
-}
-
 .contact-section-titles-main {
     color: black;
+    font-size: 1.3em;
     padding-top: 0;
     margin-top: 0;
 }
@@ -30,10 +29,10 @@ ul {
     padding: 0;
 }
 
-
-
 .brand {
     text-align: center;
+    font-family: var(--f-logo);
+    padding: 0;
 }
 
 .brand span {
@@ -45,7 +44,6 @@ ul {
     min-width: 300px;
     margin: 0 auto;
     box-shadow: 0 0 .2em #00b2e7;
-
 }
 
 .wrapper > * {
@@ -63,7 +61,9 @@ ul {
 }
 
 .link-wrapper {
-    font-size: 1.3em;
+    font-size: 1.2em;
+    background-color: white;
+    padding-top: 1.2em;
 }
 
 .form-links{
@@ -92,7 +92,7 @@ ul {
 
 .contact form label{
     display: block;
-    font-weight: 700;
+    font-weight: 600;
     margin: 1em;
 }
 
@@ -105,10 +105,15 @@ ul {
     width: 75%;
     padding: 1em;
     text-align: center;
-    outline-color: rgb(209, 155, 135);
-    outline-width: .5px;
     font-family: --f-body;
     font-size: .75em;
+    outline-color: none;
+    transition: all 2s ease;
+}
+
+.contact form input:hover,
+.contact form textarea:hover {
+    outline-color: rgb(238, 148, 116);
 }
 
 .contact form button:hover,
