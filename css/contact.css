@@ -1,59 +1,110 @@
-body{
-    background-color: rgb(194, 240, 240);
-}
-
 .contact-section {
     background-color: white;
     padding-top: 2em;
     padding-bottom: 2em;
-
 }
+
 .contact-section p {
     font-size: 1.4rem;
 }
+
 .contact-section-titles {
     color: black;
     text-decoration: underline;
-
 }
+
 .contact-section-titles-main {
     color: black;
     padding-top: 0;
+    margin-top: 0;
 }
 
-.white {
-    background-color: white;
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
 }
-.contact-icon{
-    margin-bottom: 0.5em;
-}
-.link {
-    color: rgb(48, 40, 40);
-    text-decoration: none;
-}
-.contact-img {
+
+ul {
+    list-style: none;
     padding: 0;
-    width: 100%;
 }
-@media only screen and (min-width: 600px){
-    .contact-section-wrapper{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        max-width: 800px;
-        margin: 2em auto;
-   }
-    .contact-section p {
-        font-size: 1.3rem;
-   }
-    /* .white {
-        background-color: var(--c-primary);
-   } */
-    .contact-section{
-        width: 50%;
-        margin: 10px auto;
-   }
-    .contact-img {
-        max-width: 400px;
-   }
+
+.brand {
+    text-align: center;
+}
+
+.brand span {
+    color: var(--c-orange);
+}
+
+.wrapper {
+    max-width: 600px;
+    min-width: 300px;
+    margin: 0 auto;
+    box-shadow: 0 0 .2em #00b2e7;
+
+}
+
+.wrapper > * {
+    padding: 1em;
+}
+
+.company-info {
+    background: #c9e6ff;
+}
+
+.company-info h3, 
+.company-info ul {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.link-wrapper{
+    font-size: 1.3em;
+}
+
+.form-links{
+    margin-bottom: 1.5em;
+    margin-top: 1em;
+    font-size: 1.2em;
+}
+
+.form-icon{
+    color: var(--c-primary);
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+
+.contact{
+    background: #f9feff;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+/* form styles */
+
+.contact form label{
+    display: block;
+    font-weight: 700;
+    margin: 1em;
+}
+
+.contact form p {
+    margin: 0;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 75%;
+    padding: 1em;
+    text-align: center;
+    outline-color: rgb(209, 155, 135);
+    outline-width: .5px;
+}
+
+.contact form button:hover,
+.contact form button:focus {
+    background-color: #7dafdb;
+    transition: background-color 2s ease;
 }

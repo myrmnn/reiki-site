@@ -1,7 +1,6 @@
 :root {
     --c-primary: #00b2e7;
-    --c-text: black;
-    --c-accent: rgb(227, 236, 243);
+    --c-orange: #EE6352;
     --f-body: 'Buda', cursive;
     --f-logo: 'The Girl Next Door', cursive;
 }
@@ -384,7 +383,7 @@ li.active {
     text-decoration: none;
     display: inline-block;
     margin: 0.5em 0;
-    background-color: #EE6352;
+    background-color: var(--c-orange);
     border-radius: 15px;
     -webkit-box-shadow: 1px 2px silver;
     box-shadow: 1px 2px silver;
