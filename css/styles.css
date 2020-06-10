@@ -5,7 +5,7 @@
     --f-logo: 'The Girl Next Door', cursive;
 }
 *, *::before, *::after {
-   s box-sizing: border-box;
+    box-sizing: border-box;
     overflow-x: hidden;
 }
 /* base styles */
@@ -331,7 +331,7 @@ li.active {
 }
 /* sections */
 .bottom {
-    padding-bottom: 5em;
+    padding-bottom: 2.2em;
     background-image: url(../img/mountain.jpeg);
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -548,7 +548,7 @@ footer li {
         border-radius: 10px;
    }
 }
-@media only screen and (min-width: 300px) and (max-width: 400px){
+@media only screen and (min-width: 300px) and (max-width: 320px){
     .breather {
         margin-top: 200px;
         margin-bottom: 50px;
