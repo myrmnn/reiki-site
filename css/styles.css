@@ -64,6 +64,11 @@ h2{
     margin-top: .75em;
     text-shadow: 1px 1px rgba(0,0,0,0.4);
 }
+
+.test-subtitle {
+    color: white;
+}
+
 h3{
     color: var(--c-primary);
     font-size: 1.5em;
