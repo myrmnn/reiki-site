@@ -1,5 +1,5 @@
 body{
-    background-image: url(/img/mountain.jpeg);
+    background-image: url(../img/mountain.jpeg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;

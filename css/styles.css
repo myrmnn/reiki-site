@@ -285,17 +285,22 @@ li.active {
     margin: 0 auto;
     padding: .5em;
 }
-.lead-span{
+.lead-title{
     font-weight: 500;
     font-size: 1.6rem;
     letter-spacing: 2px;
 }
+
+.lead-subtitle{
+    font-size: 2rem;
+}
+
 .bold-word{
     font-weight: 700;
     font-size: 1.6rem;
     letter-spacing: 3px;
     font-style: italic;
-    color: #EE6352;
+    color: #52b0ee;
 }
 .welcome-wrapper {
     display: -ms-flex;
