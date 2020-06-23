@@ -11,6 +11,12 @@
     font-size: 1.4rem;
 }
 
+.notice{
+    font-weight: 600;
+    background-color: rgb(255, 252, 235);
+    padding: 1em;
+}
+
 .contact-section-titles-main {
     color: black;
     font-size: 1.3em;
@@ -47,7 +53,7 @@ ul {
 }
 
 .company-info {
-    background: #c9e6ff;
+    background: aliceblue;
 }
 
 .company-info h3, 
@@ -58,7 +64,6 @@ ul {
 
 .link-wrapper {
     font-size: 1.2em;
-    padding-top: 1.2em;
 }
 
 .form-links{
@@ -78,7 +83,6 @@ ul {
 }
 
 .contact{
-    background: #f9feff;
     text-align: center;
     margin-bottom: 1em;
 }

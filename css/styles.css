@@ -1,6 +1,8 @@
 :root {
-    --c-primary: #00b2e7;
+    --c-primary: #56b6df;
+    --c-secondary-blue: aliceblue;
     --c-orange: #EE6352;
+    --c-yellow: rgb(255, 252, 235);
     --f-body: 'Buda', cursive;
     --f-logo: 'The Girl Next Door', cursive;
 }
@@ -50,18 +52,18 @@ h2{
     /* margin-top: .75em; */
     text-shadow: 1px 1px rgba(0,0,0,0.3);
 }
-.test-title {
+/* .test-title {
     color: white;
     font-size: 2em;
     padding: .5em;
     letter-spacing: 1px;
     margin-top: .75em;
     text-shadow: 1px 1px rgba(0,0,0,0.4);
-}
+} */
 
-.test-subtitle {
+/* .test-subtitle {
     color: white;
-}
+} */
 
 h3{
     color: var(--c-primary);
@@ -79,6 +81,7 @@ p {
     background: white;
     width: 100%;
 }
+
 /* header */
 
 .logo-img{
@@ -92,7 +95,6 @@ p {
 
 .logo-header{
     background-color: white;
-    padding: 20px 0;
     position: relative;
 }
 
@@ -102,7 +104,7 @@ height: 120px;
 display: flex;
 justify-content: flex-end;
 align-items: center;
-background-color: #56b6df;
+background-color: var(--c-primary);
 max-width: 700px;
 min-width: 320px;
 margin: 0 auto;
@@ -122,7 +124,7 @@ border-radius: 5px;
 /* nav */
 
 .topnav{
-    background-color: white;
+    background-color: var(--c-secondary-blue);
     overflow: hidden;
     display: flex;
     justify-content: space-evenly;
@@ -139,9 +141,8 @@ border-radius: 5px;
     text-decoration: none;
 }
 
-.topnav .active {
-    text-decoration: underline;
-    text-decoration-color: black;
+.active {
+    font-weight: 600;
 }
 
 .topnav .icon{
@@ -167,11 +168,12 @@ border-radius: 5px;
 
 .dropdown-content{
     display: none;
-    position: absolute;
-    background-color: rgb(184, 214, 240);
+    position: fixed;
+    background-color: var(--c-yellow);
     min-width: 160px;
     border-radius: 0 0 4px 4px;
     z-index: 1;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
 }
 
 .dropdown-content a{
@@ -181,11 +183,11 @@ border-radius: 5px;
 }
 
 .dropdown-content a:hover {
-    background-color: white;
+    font-weight: 600;
 }
 
 .topnav a:hover, .dropdown:hover .dropbtn {
-    color: #56b6df;
+    color: var(--c-primary);
   }
 
   .dropdown-is-visible{
@@ -195,19 +197,21 @@ border-radius: 5px;
   .rotate{
       transform: rotate(180deg);
       transition: transform .5s ease;
+  }
 
+  i{
+      color: var(--c-primary);
   }
 
 /* welcome */
 .hero {
     overflow: hidden;
-    background-image: url(../img/chakra-tree.jpeg);
+    background-image: url('https://images.unsplash.com/photo-1518495973542-4542c06a5843?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80');
     opacity: .8;
     background-attachment: fixed;
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
 }
 .breather {
     font-style: italic;
@@ -288,14 +292,17 @@ border-radius: 5px;
     background-color: white;
 }
 .lead-welcome{
-    background-color: var(--c-primary);
-    color: white;
+    background-color: var(--c-secondary-blue);
     margin: 0;
 }
 .lead {
     width: 90%;
     margin: 0 auto;
-    padding: .5em;
+}
+
+.lead-paragraph{
+
+    text-align: justify;
 }
 .lead-title{
     font-weight: 500;
@@ -359,28 +366,6 @@ border-radius: 5px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-}
-.test-card {
-    background-color: white;
-    border-radius: 10px;
-    margin: 0.5em;
-    margin-top: 1em;
-    padding: 0;
-    -webkit-box-shadow: 0 0 .5em #00b2e7;
-    box-shadow: 0 0 .5em #00b2e7;
-    -webkit-transition: 1.5s;
-    -o-transition: 1.5s;
-    transition: 1.5s 
-}
-
-.test-wrap{
-    margin-bottom: 2em;
-}
-
-
-.test-img {
-    max-width: 100px;
-    margin: 0.5em;
 }
 
 .hidden-item{
@@ -466,38 +451,7 @@ footer li {
         margin: 0 auto;
    }
 }
-@media only screen and (min-width: 600px) and (max-width: 1300px) {
-    .test-card {
-        width: 500px;
-        margin: 0 auto;
-        margin-top: 2em;
-        margin-bottom: 2em;
-   }
-    .test-img {
-        max-width: 150px;
-        margin: 0.5em;
-   }
-}
-@media only screen and (min-width: 1300px){
-    .test-wrap{
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-        flex-direction: row;
-        -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-        justify-content: space-evenly;
-   }
-    .test-card {
-        width: 400px;
-        margin: 0 auto;
-        margin-top: 2em;
-        margin-bottom: 2em;
-   }
-}
+
 
 @media only screen and (min-width: 300px) and (max-width: 320px){
     .breather {
@@ -521,7 +475,7 @@ footer li {
 /* ///// */
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 717px) {
 
     .logo-centered {
         border-radius: 0;
@@ -568,9 +522,9 @@ footer li {
 
 
 
-@media screen and (min-width: 370px){
+@media screen and (min-width: 390px){
     .logo-title{
-        font-size: 1.6rem;
+        font-size: 1.7rem;
     }
 }
 
@@ -581,51 +535,30 @@ footer li {
     }
 }
 
-@media screen and (min-width: 450px){
+@media screen and (min-width: 540px){
     .logo-title{
-        padding-right: 2.2em;
+        padding-right: 4em;
     }
 }
 
 @media screen and (min-width: 600px){
     .logo-title {
         padding-right: 0;
+        font-size: 2rem;
+        letter-spacing: 2.7px;
     }
 
     .logo-centered{
         justify-content: center;
     }
-}
 
+    .logo-header{
+    padding: 20px 0;
 
-
-
-
-
-/* @media screen and (min-width:350px){
-    .logo-title{
-    padding-right: 1.5em;
-    font-size: 1.4em;
-    }
-}
-
-@media screen and (min-width:400px){
-    .logo-title{
-        padding-right: 2.8em;
-        font-size: 2em;
-        }
-}
-
-@media screen and (min-width:530px){
-
-    .logo-title{
-        padding: 0;
-        }
-    .logo-centered{
-        justify-content: center;
     }
 
-    .logo-title{
-        letter-spacing: 2px;
+    .logo-img {
+        height: 105px;
+        width: 105px;
     }
-} */
+}
