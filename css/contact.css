@@ -35,10 +35,6 @@ ul {
     padding: 0;
 }
 
-.brand span {
-    color: var(--c-orange);
-}
-
 .wrapper {
     max-width: 600px;
     min-width: 300px;
@@ -62,7 +58,6 @@ ul {
 
 .link-wrapper {
     font-size: 1.2em;
-    background-color: white;
     padding-top: 1.2em;
 }
 
