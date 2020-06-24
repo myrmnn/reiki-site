@@ -34,6 +34,18 @@ icon.addEventListener('click', function () {
 
 });
 
+function fixNav() {
+  if(window.scrollY >= nav.offsetTop){
+      nav.classList.add('fixed-nav');
+  }
+
+  if(window.scrollY <= nav.offsetHeight){
+      nav.classList.remove('fixed-nav')
+  }
+}
+
+window.addEventListener('scroll', fixNav);
+
 
 //Reveal On Scroll
 

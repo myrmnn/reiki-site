@@ -129,6 +129,13 @@ border-radius: 5px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    z-index: 1;
+    width: 100%;
+}
+
+.fixed-nav{
+    position: fixed;
+    top: 0;
 }
 
 .topnav a{
@@ -137,7 +144,7 @@ border-radius: 5px;
     color: black;
     text-align: center;
     padding: 16px 16px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-decoration: none;
 }
 
@@ -155,7 +162,7 @@ border-radius: 5px;
 }
 
 .dropdown .dropbtn {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     border: none;
     outline: none;
     color: black;
