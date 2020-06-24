@@ -7,6 +7,10 @@ body{
     box-shadow: 0 0 .2em #00b2e7;
     max-width: 800px;
 }
+
+/* .test-subtitle{
+    color: white;
+} */
 .test-symbol {
     max-width: 150px;
     margin: 0.5em;

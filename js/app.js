@@ -37,10 +37,12 @@ icon.addEventListener('click', function () {
 function fixNav() {
   if(window.scrollY >= nav.offsetTop){
       nav.classList.add('fixed-nav');
+      document.body.style.paddingTop = nav.offsetHeight + "px";
   }
 
   if(window.scrollY <= nav.offsetHeight){
       nav.classList.remove('fixed-nav')
+      document.body.style.paddingTop = 0;
   }
 }
 
