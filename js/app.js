@@ -13,6 +13,7 @@ const dropcontent = document.querySelector('.dropdown-content');
 const dropcontent2 = document.querySelector('.dropdown-content2');
 const carrot = document.querySelector('.carrot');
 const carrot2 = document.querySelector('.carrot2');
+const pageTitle = document.querySelector('.page-titles')
 
 dropbtn.addEventListener('click', function () {
     dropcontent.classList.toggle('dropdown-is-visible');
@@ -76,7 +77,6 @@ function calculate(el) {
     // }
   }
 }
-
 
 function calcCaller(){
   console.log('scrolled')
