@@ -11,6 +11,23 @@
     overflow-x: hidden;
 }
 /* base styles */
+
+#skip-link{
+    color: whitesmoke;
+    padding: .5em;
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color: var(--c-primary);
+    position: absolute;
+    z-index: 5;
+    left: -1000px;
+    top: -100px;
+}
+
+#skip-link:focus{
+    left: 0;
+    top: 0;
+}
 body{
     margin: 0 auto;
     padding: 0;
@@ -72,7 +89,7 @@ h3{
 p {
     font-size: 1.5em;
     color: var(--c-text);
-    line-height: 1.5;
+    line-height: 1.7;
     padding: 0.5em;
 }
 .page-titles {
@@ -212,10 +229,10 @@ a:hover,
 /* welcome */
 .hero {
     overflow: hidden;
-    background-image: url('https://images.unsplash.com/photo-1518495973542-4542c06a5843?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80');
+    background-image: url('../img/Reiki\ Practice-Magnet.jpg');
     opacity: .8;
     background-attachment: fixed;
-    background-position: top;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -404,6 +421,11 @@ a:hover,
     font-size: 1.2em;
     font-weight: bolder;
 }
+
+.lead-btn{
+   margin-bottom: 2em;
+}
+
 /* footer */
 footer {
     background: white;
