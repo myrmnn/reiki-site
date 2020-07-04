@@ -11,6 +11,8 @@
     <title>Document</title>
 </head>
 <body>
+   <a href="#maincontent" id="skip-link" >Skip to main content</a>
+
     <header class="logo-header">
         <div class="logo-centered">
            <div class="logo-img-wrap">
@@ -21,9 +23,8 @@
      </header>
      <nav class="topnav" id="myTopnav">
         <a href="index.html">Home</a>
-        <a href="#maincontent" id="skip-link">Skip to main content</a>
         <div class="dropdown">
-           <button class="dropbtn active">Reiki
+           <button class="dropbtn">Reiki
            <i class="fa fa-caret-down carrot"></i>
            </button>
            <div class="dropdown-content">
@@ -48,17 +49,16 @@
         </div>
         <a href="test.html">Testimonials</a>
         <a href="contact.html">Contact</a>
-        <a href="#">Forms</a>
+        <a href="#" class="active">Forms</a>
         <a href="javascript:void(0)" class="icon">&#9776;</a>
      </nav>
 
      <div class="form-wrapper">
-        <img src="img/chakra11.png" alt="" class="test-symbol">
  
         <form name="contact" method="POST" data-netlify="true">
             <section class="banner">
                 <h2 class="banner-title">A Joyful Balance Reiki</h2>
-                <h2 class="banner-subtitle">Intake Form</h2>
+                <h2 class="banner-subtitle" id="maincontent">Intake Form</h2>
             </section>
     
         <label for="name">Name:</label>
@@ -70,8 +70,8 @@
         <label for="address">Mailing Address:</label>
         <input type="text" id="address">
     
-        <label for="name">Would like to be added to our mailing list?</label>
-        <input type="email" id="name" placeholder="Please provide your email">
+        <label for="mailing-list">Would like to be added to our mailing list?</label>
+        <input type="email" id="mailing-list" placeholder="">
         
         <label for="occupation">Occupation:</label>
         <input type="text" id="occupation">
@@ -79,7 +79,7 @@
         <label for="emergency-name">Emergency Contact Name:</label>
         <input type="text" id="emergency-name">
         
-        <label for="emergency=phone">Emergency Contact Phone Number:</label>
+        <label for="emergency-phone">Emergency Contact Phone Number:</label>
         <input type="tel" id="emergency-phone">
     
         <label for="referral">How did you hear about us?</label>
