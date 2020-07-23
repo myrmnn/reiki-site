@@ -214,6 +214,7 @@ border-radius: 5px;
 a:hover,
 .dropdown:hover .dropbtn{ 
     font-weight: 600;
+    text-decoration: underline;
 }
 
   .dropdown-is-visible{
