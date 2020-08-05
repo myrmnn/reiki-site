@@ -11,6 +11,8 @@ html{
 .btn{
     color: white;
     text-decoration: none;
+    outline: none;
+    border: none;
 }
 
 label{
@@ -29,7 +31,8 @@ input{
     transition: all 1s ease;
 }
 
-input:focus{
+input:focus,
+textarea:focus {
     outline-color: var(--c-orange);
 }
 
@@ -48,11 +51,6 @@ form{
 
 textarea{
     margin-top: 1em;
-}
-
-.btn-block{
-    display: block;
-    margin: 1em auto;
 }
 
 .banner{

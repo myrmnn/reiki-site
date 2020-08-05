@@ -116,8 +116,8 @@ ul {
     outline-color: rgb(238, 148, 116);
 }
 
-.contact form button:hover,
+/* .contact form button:hover,
 .contact form button:focus {
     background-color: #7dafdb;
     transition: background-color 1s ease;
-}
+} */
