@@ -3,24 +3,52 @@ let browserHeight = window.innerHeight;
 
 hideInitially();
 
-//Mobile Menu
+//navigation
 
-class NavBar {
-  constructor(){
-    this.toggleButton = document.querySelector(".toggle-button");
-    this.navbarLinks = document.querySelector(".navbar-links");
-    this.events();
-  }
+const icon = document.querySelector('.icon');
+const nav = document.getElementById("myTopnav");
+const dropbtn = document.querySelector('.dropbtn');
+const dropbtn2 = document.querySelector('.dropbtn2');
+const dropcontent = document.querySelector('.dropdown-content');
+const dropcontent2 = document.querySelector('.dropdown-content2');
+const carrot = document.querySelector('.carrot');
+const carrot2 = document.querySelector('.carrot2');
+const pageTitle = document.querySelector('.page-titles')
 
-  events() {
-    this.toggleButton.addEventListener('click', (e) => {
-      e.preventDefault();
-      this.navbarLinks.classList.toggle('active');
-    })
-  }
-}
+dropbtn.addEventListener('click', function () {
+    dropcontent.classList.toggle('dropdown-is-visible');
+    carrot.classList.toggle('rotate');
+})
 
-let nav = new NavBar();
+dropbtn2.addEventListener('click', function () {
+    dropcontent2.classList.toggle('dropdown-is-visible');
+    carrot2.classList.toggle('rotate');
+})
+
+
+icon.addEventListener('click', function () {
+    nav.classList.toggle('responsive');
+    if(dropcontent.classList.contains('dropdown-is-visible') || dropcontent2.classList.contains('dropdown-is-visible')){
+        dropcontent.classList.remove('dropdown-is-visible');
+        dropcontent2.classList.remove('dropdown-is-visible');
+        }
+
+});
+
+// function fixNav() {
+//   if(window.scrollY >= nav.offsetTop){
+//       nav.classList.add('fixed-nav');
+//       document.body.style.paddingTop = nav.offsetHeight + "px";
+//   }
+
+//   if(window.scrollY <= nav.offsetHeight){
+//       nav.classList.remove('fixed-nav')
+//       document.body.style.paddingTop = 0;
+//   }
+// }
+
+// window.addEventListener('scroll', fixNav);
+
 
 //Reveal On Scroll
 
@@ -40,7 +68,7 @@ function calculate(el) {
   if(window.pageYOffset + browserHeight > el.offsetTop){
     console.log('calculated')
     let scrollPercent = (el.getBoundingClientRect().y / browserHeight) * 100;
-    if(scrollPercent < 75){
+    if(scrollPercent < 90){
         el.classList.add('hidden-item--now-visible');
         el.isRevealed = true;
     }
@@ -49,7 +77,6 @@ function calculate(el) {
     // }
   }
 }
-
 
 function calcCaller(){
   console.log('scrolled')
