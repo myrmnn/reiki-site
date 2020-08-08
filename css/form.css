@@ -22,10 +22,11 @@ label{
     font-size: 1.3rem;
 }
 
-input{
+input,
+textarea{
     margin-bottom: 1em;
     padding: .25em;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-family: --f-body;
     text-align: center;
     transition: all 1s ease;
@@ -49,9 +50,13 @@ form{
     margin: 3em auto;
 }
 
-textarea{
+/* textarea{
     margin-top: 1em;
-}
+    padding: .25em;
+    font-size: 1.2rem;
+    font-family: --f-body;
+    text-align: center;
+} */
 
 .banner{
     justify-content: space-evenly;

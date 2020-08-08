@@ -113,6 +113,7 @@ p {
 .logo-header{
     background-color: white;
     position: relative;
+    padding: 10px 0;
 }
 
 .logo-centered{
@@ -141,7 +142,7 @@ border-radius: 5px;
 /* nav */
 
 .topnav{
-    background-color: var(--c-secondary-blue);
+    background-color: var(--c-primary);
     overflow: hidden;
     display: flex;
     justify-content: space-evenly;
@@ -168,6 +169,7 @@ border-radius: 5px;
     padding: 16px 16px;
     font-size: 1.5rem;
     text-decoration: none;
+    transition: all .3s ease;
 }
 
 .active {
@@ -211,11 +213,15 @@ border-radius: 5px;
     display: block;
 }
 
-a:hover,
-.dropdown:hover .dropbtn{ 
-    font-weight: 600;
-    text-decoration: underline;
+.dropdown-content a:hover{
+    color: var(--c-orange);
 }
+
+a:hover,
+.dropdown:hover .dropbtn{
+    color: white;
+}
+
 
   .dropdown-is-visible{
       display: block;
@@ -524,6 +530,7 @@ footer li {
     .topnav{
         display: block;
     }
+
     .topnav a:not(:first-child), .dropdown .dropbtn {
       display: none;
     }
@@ -587,11 +594,6 @@ footer li {
 
     .logo-centered{
         justify-content: center;
-    }
-
-    .logo-header{
-    padding: 20px 0;
-
     }
 
     .logo-img {

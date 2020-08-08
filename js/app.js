@@ -68,7 +68,7 @@ function calculate(el) {
   if(window.pageYOffset + browserHeight > el.offsetTop){
     console.log('calculated')
     let scrollPercent = (el.getBoundingClientRect().y / browserHeight) * 100;
-    if(scrollPercent < 75){
+    if(scrollPercent < 90){
         el.classList.add('hidden-item--now-visible');
         el.isRevealed = true;
     }
