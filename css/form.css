@@ -11,6 +11,8 @@ html{
 .btn{
     color: white;
     text-decoration: none;
+    outline: none;
+    border: none;
 }
 
 label{
@@ -20,17 +22,19 @@ label{
     font-size: 1.3rem;
 }
 
-input{
+input,
+textarea{
     margin-bottom: 1em;
     padding: .25em;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-family: --f-body;
     text-align: center;
     transition: all 1s ease;
     font-family: var(--f-body);
 }
 
-input:focus{
+input:focus,
+textarea:focus {
     outline-color: var(--c-orange);
 }
 
@@ -47,6 +51,7 @@ form{
     margin: 3em auto;
 }
 
+<<<<<<< HEAD
 textarea{
     margin-top: 1.3em;
     font-family: var(--f-body);
@@ -57,6 +62,15 @@ textarea{
     display: block;
     margin: 1em auto;
 }
+=======
+/* textarea{
+    margin-top: 1em;
+    padding: .25em;
+    font-size: 1.2rem;
+    font-family: --f-body;
+    text-align: center;
+} */
+>>>>>>> 10dbb0cea65e9d10f69f68403761efbc3f0cc6e4
 
 .banner{
     justify-content: space-evenly;

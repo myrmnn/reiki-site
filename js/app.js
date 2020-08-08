@@ -35,19 +35,19 @@ icon.addEventListener('click', function () {
 
 });
 
-function fixNav() {
-  if(window.scrollY >= nav.offsetTop){
-      nav.classList.add('fixed-nav');
-      document.body.style.paddingTop = nav.offsetHeight + "px";
-  }
+// function fixNav() {
+//   if(window.scrollY >= nav.offsetTop){
+//       nav.classList.add('fixed-nav');
+//       document.body.style.paddingTop = nav.offsetHeight + "px";
+//   }
 
-  if(window.scrollY <= nav.offsetHeight){
-      nav.classList.remove('fixed-nav')
-      document.body.style.paddingTop = 0;
-  }
-}
+//   if(window.scrollY <= nav.offsetHeight){
+//       nav.classList.remove('fixed-nav')
+//       document.body.style.paddingTop = 0;
+//   }
+// }
 
-window.addEventListener('scroll', fixNav);
+// window.addEventListener('scroll', fixNav);
 
 
 //Reveal On Scroll
@@ -68,7 +68,7 @@ function calculate(el) {
   if(window.pageYOffset + browserHeight > el.offsetTop){
     console.log('calculated')
     let scrollPercent = (el.getBoundingClientRect().y / browserHeight) * 100;
-    if(scrollPercent < 75){
+    if(scrollPercent < 90){
         el.classList.add('hidden-item--now-visible');
         el.isRevealed = true;
     }
