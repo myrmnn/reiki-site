@@ -51,7 +51,6 @@ form{
     margin: 3em auto;
 }
 
-<<<<<<< HEAD
 textarea{
     margin-top: 1.3em;
     font-family: var(--f-body);
@@ -62,15 +61,6 @@ textarea{
     display: block;
     margin: 1em auto;
 }
-=======
-/* textarea{
-    margin-top: 1em;
-    padding: .25em;
-    font-size: 1.2rem;
-    font-family: --f-body;
-    text-align: center;
-} */
->>>>>>> 10dbb0cea65e9d10f69f68403761efbc3f0cc6e4
 
 .banner{
     justify-content: space-evenly;
@@ -81,3 +71,14 @@ textarea{
     margin-bottom: 1em;
     border-bottom: 1px solid var(--c-primary);
 }
+
+.agree{
+    width: 90%;
+}
+
+q,
+span{
+font-weight: 700;
+color: var(--c-primary);
+}
+

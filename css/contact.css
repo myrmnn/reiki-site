@@ -10,15 +10,19 @@
 .contact-section p {s
     font-size: 1.4rem;
 }
-
+/* 
 .notice{
     font-weight: 600;
     padding: 1em;
-    background-color: rgb(255, 174, 119);
+    background-color: #ffea8e;
 }
 
 .notice-img{
     width: 60%;
+} */
+
+.img-rates{
+    width: 100%;
 }
 
 .contact-section-titles-main {
@@ -120,8 +124,8 @@ ul {
     outline-color: rgb(238, 148, 116);
 }
 
-/* .contact form button:hover,
-.contact form button:focus {
-    background-color: #7dafdb;
-    transition: background-color 1s ease;
-} */
+@media screen and (min-width: 1000px){
+    .img-rates{
+        width: 70%;
+    }
+}
