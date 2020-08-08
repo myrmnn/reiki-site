@@ -156,7 +156,7 @@ border-radius: 5px;
     position: fixed;
     top: 0;
     transition: all 1s ease;
-    background-color: var(--c-primary);
+    background:linear-gradient(to right, var(--c-primary), var(--c-yellow));
     opacity: .9;
 }
 
@@ -219,6 +219,7 @@ a:hover,
 
   .dropdown-is-visible{
       display: block;
+      opacity: 1;
   }
 
   .rotate{

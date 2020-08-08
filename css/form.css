@@ -27,6 +27,7 @@ input{
     font-family: --f-body;
     text-align: center;
     transition: all 1s ease;
+    font-family: var(--f-body);
 }
 
 input:focus{
@@ -47,7 +48,9 @@ form{
 }
 
 textarea{
-    margin-top: 1em;
+    margin-top: 1.3em;
+    font-family: var(--f-body);
+    font-size: 1.3rem;
 }
 
 .btn-block{
