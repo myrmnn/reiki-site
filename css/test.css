@@ -13,7 +13,7 @@ body{
 } */
 .test-symbol {
     max-width: 150px;
-    padding-bottom: 2em;
+    padding: 2em 0;
 }
 @media only screen and (min-width: 700px){
     .test-section {
