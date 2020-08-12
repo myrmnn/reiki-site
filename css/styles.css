@@ -304,6 +304,7 @@ a:hover,
 }
 .lead-sub-welcome{
     margin-top: 1em;
+    padding: 0 .5em;
 }
 .lead {
     width: 90%;
