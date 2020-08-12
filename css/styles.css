@@ -302,6 +302,9 @@ a:hover,
     background-color: var(--c-secondary-blue);
     margin: 0;
 }
+.lead-sub-welcome{
+    margin-top: 1em;
+}
 .lead {
     width: 90%;
     margin: 0 auto;
