@@ -15,6 +15,7 @@ body{
     max-width: 150px;
     padding: 2em 0;
 }
+
 @media only screen and (min-width: 700px){
     .test-section {
         border-radius: 10px;
