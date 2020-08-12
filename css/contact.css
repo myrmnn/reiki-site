@@ -7,13 +7,27 @@
     margin: 0 auto;
 }
 
-.contact-section p {
+.contact-section p {s
     font-size: 1.4rem;
+}
+/* 
+.notice{
+    font-weight: 600;
+    padding: 1em;
+    background-color: #ffea8e;
+}
+
+.notice-img{
+    width: 60%;
+} */
+
+.img-rates{
+    width: 100%;
 }
 
 .contact-section-titles-main {
     color: black;
-    font-size: 1.3em;
+    font-size: 2em;
     padding-top: 0;
     margin-top: 0;
 }
@@ -35,15 +49,12 @@ ul {
     padding: 0;
 }
 
-.brand span {
-    color: var(--c-orange);
-}
-
 .wrapper {
     max-width: 600px;
     min-width: 300px;
-    margin: 0 auto;
-    box-shadow: 0 0 .2em #00b2e7;
+    margin: 4em auto;
+    border: 1px solid var(--c-primary);
+    border-radius: 5px;
 }
 
 .wrapper > * {
@@ -51,7 +62,7 @@ ul {
 }
 
 .company-info {
-    background: #c9e6ff;
+    background: aliceblue;
 }
 
 .company-info h3, 
@@ -62,8 +73,6 @@ ul {
 
 .link-wrapper {
     font-size: 1.2em;
-    background-color: white;
-    padding-top: 1.2em;
 }
 
 .form-links{
@@ -83,7 +92,6 @@ ul {
 }
 
 .contact{
-    background: #f9feff;
     text-align: center;
     margin-bottom: 1em;
 }
@@ -116,8 +124,8 @@ ul {
     outline-color: rgb(238, 148, 116);
 }
 
-.contact form button:hover,
-.contact form button:focus {
-    background-color: #7dafdb;
-    transition: background-color 1s ease;
+@media screen and (min-width: 1000px){
+    .img-rates{
+        width: 70%;
+    }
 }
