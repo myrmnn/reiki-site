@@ -7,24 +7,18 @@ hideInitially();
 
 const icon = document.querySelector('.icon');
 const nav = document.getElementById("myTopnav");
-const dropbtn = document.querySelector('.dropbtn');
-const dropbtn2 = document.querySelector('.dropbtn2');
+const dropbtn = document.querySelectorAll('.dropbtn');
+// const dropbtn2 = document.querySelector('.dropbtn2');
 const dropcontent = document.querySelector('.dropdown-content');
-const dropcontent2 = document.querySelector('.dropdown-content2');
-const carrot = document.querySelector('.carrot');
-const carrot2 = document.querySelector('.carrot2');
-const pageTitle = document.querySelector('.page-titles')
+// const dropcontent2 = document.querySelector('.dropdown-content2');
+const carrot = document.querySelectorAll('.carrot');
+// const carrot2 = document.querySelector('.carrot2');
 
-dropbtn.addEventListener('click', function () {
-    dropcontent.classList.toggle('dropdown-is-visible');
-    carrot.classList.toggle('rotate');
-})
 
-dropbtn2.addEventListener('click', function () {
-    dropcontent2.classList.toggle('dropdown-is-visible');
-    carrot2.classList.toggle('rotate');
-})
-
+dropbtn.forEach(el => el.addEventListener('click', function() {
+  el.nextElementSibling.classList.toggle('dropdown-is-visible');
+  el.firstElementChild.classList.toggle('rotate');
+}))
 
 icon.addEventListener('click', function () {
     nav.classList.toggle('responsive');

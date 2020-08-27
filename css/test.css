@@ -21,35 +21,4 @@ body{
    }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 1300px) {
-    .test-card {
-        width: 500px;
-        margin: 0 auto;
-        margin-top: 2em;
-        margin-bottom: 2em;
-   }
-    .test-img {
-        max-width: 150px;
-        margin: 0.5em;
-   }
-}
-@media only screen and (min-width: 1300px){
-    .test-wrap{
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-        flex-direction: row;
-        -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-        justify-content: space-evenly;
-   }
-    .test-card {
-        width: 400px;
-        margin: 0 auto;
-        margin-top: 2em;
-        margin-bottom: 2em;
-   }
-}
+
