@@ -134,7 +134,7 @@ border-radius: 5px;
     z-index: 1;
     width: 100%;
     transition: all 1s ease;
-    box-shadow: 1px 1px 2px rgba(0,0,0,0.3)
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
 }
 
 .topnav a{
@@ -210,14 +210,16 @@ a:hover,
 
 
 /* welcome */
+
 .hero {
     overflow: hidden;
-    background-image: url('../img/Reiki\ Practice-Magnet.jpg');
+    background-image: url('../img/breathe.png');
     opacity: .8;
     background-attachment: fixed;
-    background-position: center;
+    background-position-y: -150px;
     background-size: cover;
     background-repeat: no-repeat;
+    height: 40vh;
 }
 .breather {
     font-style: italic;
@@ -225,11 +227,12 @@ a:hover,
     margin-top: 75px;
     margin-bottom: 75px;
     text-align: center;
+    font-size: 4em;
+    animation: sk-scaleout 11s infinite linear;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    font-size: 4em;
-    color: white;
+    color: skyblue;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -238,7 +241,7 @@ a:hover,
     align-items: center;
     border-radius: 100%;
     -webkit-animation: sk-scaleout 11s infinite linear;
-    animation: sk-scaleout 11s infinite linear;
+    
 }
 @-webkit-keyframes sk-scaleout {
     0% {
@@ -522,7 +525,7 @@ footer li {
     }
 
     .topnav.responsive {
-        position: relative;
+        position: absolute;
         z-index: 2;
         width: 100%;
     }

@@ -8,11 +8,8 @@ hideInitially();
 const icon = document.querySelector('.icon');
 const nav = document.getElementById("myTopnav");
 const dropbtn = document.querySelectorAll('.dropbtn');
-// const dropbtn2 = document.querySelector('.dropbtn2');
-const dropcontent = document.querySelector('.dropdown-content');
-// const dropcontent2 = document.querySelector('.dropdown-content2');
+const dropcontent = document.querySelectorAll('.dropdown-content');
 const carrot = document.querySelectorAll('.carrot');
-// const carrot2 = document.querySelector('.carrot2');
 
 
 dropbtn.forEach(el => el.addEventListener('click', function() {
@@ -22,11 +19,9 @@ dropbtn.forEach(el => el.addEventListener('click', function() {
 
 icon.addEventListener('click', function () {
     nav.classList.toggle('responsive');
-    if(dropcontent.classList.contains('dropdown-is-visible') || dropcontent2.classList.contains('dropdown-is-visible')){
-        dropcontent.classList.remove('dropdown-is-visible');
-        dropcontent2.classList.remove('dropdown-is-visible');
-        }
-
+    for(i = 0; i < dropcontent.length; i++){
+      dropcontent[i].classList.remove('dropdown-is-visible');
+    }
 });
 
 // function fixNav() {
