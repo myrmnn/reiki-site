@@ -1,7 +1,5 @@
 .contact-section {
   background-color: white;
-  padding-top: 2em;
-  padding-bottom: 2em;
   max-width: 600px;
   min-width: 300px;
   margin: 0 auto;
@@ -52,7 +50,7 @@ ul {
 .wrapper {
   max-width: 600px;
   min-width: 300px;
-  margin: 4em auto;
+  margin: 0 auto;
   border: 1px solid var(--c-primary);
   border-radius: 5px;
 }
@@ -73,6 +71,7 @@ ul {
 
 .link-wrapper {
   font-size: 1.2em;
+  padding-top: 1.5em;
 }
 
 .form-links {
@@ -93,7 +92,6 @@ ul {
 
 .contact {
   text-align: center;
-  margin-bottom: 1em;
 }
 
 /* form styles */

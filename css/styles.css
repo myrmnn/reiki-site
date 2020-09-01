@@ -53,12 +53,7 @@
 body {
   overflow-x: auto;
   font-family: "Buda", cursive;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   text-align: center;
-  width: 100%;
 }
 
 .page-titles {
@@ -112,7 +107,7 @@ p {
   color: whitesmoke;
   text-decoration: none;
   display: inline-block;
-  margin: 0.5em 0;
+  margin: 2em 0;
   border: none;
   outline: none;
   background-color: #EE6352;
@@ -121,7 +116,8 @@ p {
   box-shadow: 1px 2px silver;
   font-family: "Buda", cursive;
   font-size: 1.2em;
-  font-weight: bolder;
+  font-weight: 200;
+  letter-spacing: 1px;
   cursor: pointer;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
@@ -131,17 +127,8 @@ p {
   background-color: #56b6df;
 }
 
-.btn-block {
+.btn--block {
   display: block;
-  margin: 1em auto;
-}
-
-.lead-btn {
-  margin-bottom: 2em;
-}
-
-.btn-contact {
-  margin-top: 2em;
 }
 
 .logo {
@@ -284,7 +271,7 @@ p {
 .topnav__dropdown-content {
   display: none;
   position: absolute;
-  background-color: #fffceb;
+  background-color: #fff1db;
   min-width: 160px;
   border-radius: 0 0 4px 4px;
   z-index: 1;
@@ -442,7 +429,9 @@ p {
 }
 
 .welcome__title {
-  background-color: #d2e8fc;
+  background-color: #fff1db;
+  -webkit-box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.2);
 }
 
 .welcome__subtitle {

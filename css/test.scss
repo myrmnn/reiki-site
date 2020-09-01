@@ -1,5 +1,9 @@
 body{
     background-image: url("../img/mountain.jpeg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
 }
 .test-section {
     background-color: white;
