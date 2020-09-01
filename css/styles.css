@@ -30,7 +30,7 @@
   padding: .5em;
   text-decoration: none;
   font-size: 1.5rem;
-  background-color: var(--c-primary);
+  background-color: #56b6df;
   position: absolute;
   z-index: 5;
   left: -1000px;
@@ -69,7 +69,7 @@ body {
 
 @media only screen and (min-width: 300px) and (max-width: 320px) {
   .page-titles {
-    font-family: var(--f-logo);
+    font-family: "The Girl Next Door", cursive;
     font-size: 1em;
     background: white;
     width: 100%;
@@ -78,31 +78,30 @@ body {
 
 h1 {
   font-size: 1.5em;
-  font-family: var(--f-logo);
+  font-family: "The Girl Next Door", cursive;
   padding: 0.5em;
 }
 
 h1 a {
-  color: var(--c-text);
+  color: "Buda", cursive;
   text-decoration: none;
 }
 
 h2 {
-  color: var(--c-primary);
+  color: #56b6df;
   font-size: 2em;
   padding: .5em;
   letter-spacing: 1px;
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 h3 {
-  color: var(--c-primary);
+  color: #56b6df;
   font-size: 1.5em;
 }
 
 p {
   font-size: 1.5em;
-  color: var(--c-text);
   line-height: 1.7;
   padding: 0.5em;
 }
@@ -114,6 +113,7 @@ p {
   display: inline-block;
   margin: 0.5em 0;
   border: none;
+  outline: none;
   background-color: #EE6352;
   border-radius: 15px;
   -webkit-box-shadow: 1px 2px silver;
@@ -380,7 +380,7 @@ p {
   border: 1px solid #d6d4d4;
   -webkit-box-shadow: 1px 1.5px rgba(0, 0, 0, 0.3);
   box-shadow: 1px 1.5px rgba(0, 0, 0, 0.3);
-  margin-right: .5em;
+  margin: .5em;
 }
 
 .footer ul {
@@ -427,7 +427,7 @@ p {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  font-size: 1.8em;
+  font-size: 1.7em;
 }
 
 @media only screen and (min-width: 400px) {
@@ -438,7 +438,7 @@ p {
 
 @media only screen and (min-width: 768px) {
   .hero {
-    font-size: 2em;
+    font-size: 1.8em;
     height: 40vh;
     background-position-y: -150px;
   }
@@ -454,6 +454,48 @@ p {
   color: #56b6df;
   border-radius: 100%;
   -webkit-animation: breathe 11s infinite linear;
+}
+
+.welcome__title {
+  background-color: #d2e8fc;
+}
+
+.welcome__subtitle {
+  padding: 1em;
+}
+
+.lead {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.lead__title {
+  font-weight: 500;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+}
+
+.lead__subtitle {
+  font-size: 2rem;
+}
+
+.lead__paragraph {
+  text-align: justify;
+}
+
+@media only screen and (min-width: 768px) {
+  .lead__paragraph {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+.bold-word {
+  font-weight: 700;
+  font-size: 1.6rem;
+  letter-spacing: 3px;
+  font-style: italic;
+  color: #52b0ee;
 }
 
 @-webkit-keyframes breathe {
@@ -510,47 +552,5 @@ p {
     transform: scale(1);
     opacity: 0.5;
   }
-}
-
-.welcome {
-  background-color: #d2e8fc;
-}
-
-.welcome__subtitle {
-  padding-bottom: 1em;
-}
-
-.lead {
-  width: 90%;
-  margin: 0 auto;
-}
-
-.lead__title {
-  font-weight: 500;
-  font-size: 1.6rem;
-  letter-spacing: 2px;
-}
-
-.lead__subtitle {
-  font-size: 2rem;
-}
-
-.lead__paragraph {
-  text-align: justify;
-}
-
-@media only screen and (min-width: 768px) {
-  .lead__paragraph {
-    width: 70%;
-    margin: 0 auto;
-  }
-}
-
-.bold-word {
-  font-weight: 700;
-  font-size: 1.6rem;
-  letter-spacing: 3px;
-  font-style: italic;
-  color: #52b0ee;
 }
 /*# sourceMappingURL=styles.css.map */

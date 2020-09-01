@@ -11,14 +11,14 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    font-size: 1.8em;
+    font-size: 1.7em;
 
     @media only screen and (min-width: 400px){
         background-position-y: -100px;
     }
 
     @media only screen and (min-width: $tablet){
-        font-size: 2em;
+       font-size: 1.8em;
         height: 40vh;
         background-position-y: -150px;
 
@@ -36,6 +36,47 @@
     -webkit-animation: breathe 11s infinite linear;
 }
 
+.welcome{
+    &__title{
+    background-color:$secondaryBlue;
+    }
+    &__subtitle{
+        padding: 1em;
+    }
+}
+
+.lead {
+    width: 90%;
+    margin: 0 auto;
+
+    &__title{
+        font-weight: 500;
+        font-size: 1.6rem;
+        letter-spacing: 2px;
+    }
+    
+    &__subtitle{
+        font-size: 2rem;
+    }
+    
+    &__paragraph{
+    
+        text-align: justify;
+
+        @media only screen and (min-width: $tablet){
+                width: 70%;
+                margin: 0 auto;
+        }
+    }
+}
+
+.bold-word{
+    font-weight: 700;
+    font-size: 1.6rem;
+    letter-spacing: 3px;
+    font-style: italic;
+    color: #52b0ee;
+}
 
 @-webkit-keyframes breathe {
     0% {
@@ -90,47 +131,6 @@
         transform: scale(1);
         opacity: 0.5;
    }
-}
-
-.welcome{
-    background-color: $secondaryBlue;
-
-    &__subtitle{
-        padding-bottom: 1em;
-    }
-}
-
-.lead {
-    width: 90%;
-    margin: 0 auto;
-
-    &__title{
-        font-weight: 500;
-        font-size: 1.6rem;
-        letter-spacing: 2px;
-    }
-    
-    &__subtitle{
-        font-size: 2rem;
-    }
-    
-    &__paragraph{
-    
-        text-align: justify;
-
-        @media only screen and (min-width: $tablet){
-                width: 70%;
-                margin: 0 auto;
-        }
-    }
-}
-
-.bold-word{
-    font-weight: 700;
-    font-size: 1.6rem;
-    letter-spacing: 3px;
-    font-style: italic;
-    color: #52b0ee;
 }
 
 

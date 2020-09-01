@@ -44,7 +44,7 @@ $tablet: 768px;
     padding: .5em;
     text-decoration: none;
     font-size: 1.5rem;
-    background-color: var(--c-primary);
+    background-color: $primaryBlue;
     position: absolute;
     z-index: 5;
     left: -1000px;
@@ -83,7 +83,7 @@ body{
 
 @media only screen and (min-width: 300px) and (max-width: 320px){
     .page-titles {
-        font-family: var(--f-logo);
+        font-family: $headingFont;
         font-size: 1em;
         background: white;
         width: 100%;
@@ -93,29 +93,28 @@ body{
 // typography
 h1 {
     font-size: 1.5em;
-    font-family: var(--f-logo);
+    font-family: $headingFont;
     padding: 0.5em;
 }
 h1 a{
-    color: var(--c-text);
+    color: $bodyFont;
     text-decoration: none;
 }
 h2{
-    color: var(--c-primary);
+    color: $primaryBlue;
     font-size: 2em;
     padding: .5em;
     letter-spacing: 1px;
-    text-shadow: 1px 1px rgba(0,0,0,0.3);
+    text-shadow: 1px 1px rgba(0,0,0,0.2);
 }
 
 h3{
-    color: var(--c-primary);
+    color: $primaryBlue;
     font-size: 1.5em;
 }
 
 p {
     font-size: 1.5em;
-    color: var(--c-text);
     line-height: 1.7;
     padding: 0.5em;
 }
@@ -128,6 +127,7 @@ p {
     display: inline-block;
     margin: 0.5em 0;
     border: none;
+    outline: none;
     background-color: $orange;
     border-radius: 15px;
     -webkit-box-shadow: 1px 2px silver;
@@ -375,7 +375,7 @@ p {
         border: 1px solid rgb(214, 212, 212);
         -webkit-box-shadow: 1px 1.5px rgba(0,0,0,0.3);
         box-shadow: 1px 1.5px rgba(0,0,0,0.3);
-        margin-right: .5em;
+        margin: .5em;
     }
 
     & ul {
