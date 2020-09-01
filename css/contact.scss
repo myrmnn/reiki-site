@@ -1,0 +1,131 @@
+.contact-section {
+    background-color: white;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    max-width: 600px;
+    min-width: 300px;
+    margin: 0 auto;
+}
+
+.contact-section p {
+    font-size: 1.4rem;
+}
+/* 
+.notice{
+    font-weight: 600;
+    padding: 1em;
+    background-color: #ffea8e;
+}
+
+.notice-img{
+    width: 60%;
+} */
+
+.img-rates{
+    width: 100%;
+}
+
+.contact-section-titles-main {
+    color: black;
+    font-size: 2em;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.brand {
+    text-align: center;
+    font-family: var(--f-logo);
+    padding: 0;
+}
+
+.wrapper {
+    max-width: 600px;
+    min-width: 300px;
+    margin: 4em auto;
+    border: 1px solid var(--c-primary);
+    border-radius: 5px;
+}
+
+.wrapper > * {
+    padding: 1em;
+}
+
+.company-info {
+    background: aliceblue;
+}
+
+.company-info h3, 
+.company-info ul {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.link-wrapper {
+    font-size: 1.2em;
+}
+
+.form-links{
+    margin-bottom: 1.5em;
+    font-size: 1.2em;
+}
+
+.link-wrapper a{
+    text-decoration: none;
+    color: black;
+}
+
+.form-icon{
+    color: var(--c-primary);
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+
+.contact{
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+/* form styles */
+
+.contact form label{
+    display: block;
+    font-weight: 600;
+    margin: 1em;
+}
+
+.contact form p {
+    margin: 0;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 75%;
+    padding: 1em;
+    text-align: center;
+    font-family: --f-body;
+    font-size: .75em;
+    outline-color: none;
+    transition: all 2s ease;
+}
+
+.contact form input:hover,
+.contact form textarea:hover {
+    outline-color: rgb(238, 148, 116);
+}
+
+@media screen and (min-width: 1000px){
+    .img-rates{
+        width: 60%;
+    }
+}

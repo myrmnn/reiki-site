@@ -5,22 +5,22 @@ hideInitially();
 
 //navigation
 
-const icon = document.querySelector('.icon');
+const icon = document.querySelector('.topnav__icon');
 const nav = document.getElementById("myTopnav");
-const dropbtn = document.querySelectorAll('.dropbtn');
-const dropcontent = document.querySelectorAll('.dropdown-content');
-const carrot = document.querySelectorAll('.carrot');
+const dropbtn = document.querySelectorAll('.topnav__dropbtn');
+const dropcontent = document.querySelectorAll('.topnav__dropdown-content');
+const carrot = document.querySelectorAll('.topnav__carrot');
 
 
 dropbtn.forEach(el => el.addEventListener('click', function() {
-  el.nextElementSibling.classList.toggle('dropdown-is-visible');
+  el.nextElementSibling.classList.toggle('topnav__dropdown-content--is-visible');
   el.firstElementChild.classList.toggle('rotate');
 }))
 
 icon.addEventListener('click', function () {
     nav.classList.toggle('responsive');
     for(i = 0; i < dropcontent.length; i++){
-      dropcontent[i].classList.remove('dropdown-is-visible');
+      dropcontent[i].classList.remove('topnav__dropdown-content--is-visible');
     }
 });
 

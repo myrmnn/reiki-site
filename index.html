@@ -13,22 +13,24 @@
 </head>
 <body>
 
-    <header class="logo-header">
-        <div class="logo-centered">
-           <div class="logo-img-wrap">
-              <img src="img/Reiki Practice-Magnet.jpg" alt="logo" class="logo-img">
-           </div>
-           <h1 class="logo-title">A Joyful Balance Reiki</h1>
-        </div>
-     </header>
+   <header class="logo">
+      <div class="logo__container">
+         <div>
+            <img src="img/logo-uncropped.jpg" alt="logo" class="logo__img">
+         </div>
+         <h1 class="logo__title">A Joyful Balance Reiki</h1>
+      </div>
+   </header>
+
+
      <nav class="topnav" id="myTopnav">
         <a href="#maincontent" id="skip-link">Skip to main content</a>
         <a href="index.html" class="active">Home</a>
-        <div class="dropdown">
-           <button class="dropbtn">Reiki
-           <i class="fa fa-caret-down carrot"></i>
+        <div class="topnav__dropdown">
+           <button class="topnav__dropbtn">Reiki
+           <i class="fa fa-caret-down topnav__carrot"></i>
            </button>
-           <div class="dropdown-content">
+           <div class="topnav__dropdown-content">
               <a href="reiki.html#about-reiki">About Reiki</a>
               <a href="reiki.html#why-reiki">Why Reiki?</a>
               <a href="reiki.html#benefits">Benefits</a>
@@ -36,11 +38,11 @@
            </div>
         </div>
         <a href="about.html" >About</a>
-        <div class="dropdown">
-           <button class="dropbtn">Services
+        <div class="topnav__dropdown">
+           <button class="topnav__dropbtn">Services
            <i class="fa fa-caret-down"></i>
            </button>
-           <div class="dropdown-content">
+           <div class="topnav__dropdown-content">
               <a href="reiki.html">Individuals</a>
               <a href="reiki.html">Family & groups</a>
               <a href="reiki.html">Businesses</a>
@@ -52,27 +54,29 @@
         <a href="contact.html">Contact</a>
         <a href="form.html">Forms</a>
         <a href="https://www.facebook.com/A-Joyful-Balance-Reiki-573634809470996/?__xts__[0]=68.ARAY4iub_cD6NnmoO6xWO9Duf2thEGawr5XaJMq9n0ZytY2Y3GgE1UtG7kPrDZdxwU_VI1i3A2goDQ1tYwhHOf6Zn_ODUDNaBRtXHskOLoIYhArWkRhfaEa-oB-_r8uw2ynaU47cdm9VpYmC0tJJdnV1D8K-tA48DWwN_tWEmTSvqFV9ugsQmLLv88iX1__DhuuvgDerrcSWsRjn_ONdgxbjLbkaGifWiZEHMVaEhrslcSXCsLeuKr-BqU5AhgdIdygJHJ__N3Qq9kWProPgts-Q9p3JUUga1EHhpIHwhPIRjZmIkvARj5-Gz1e17tpqdgrw34kRSao__9C0gxgsx9k_zg"><i class="fab fa-facebook"></i></a>
-        <a href="javascript:void(0)" class="icon"><i class="fas fa-bars"></i></a>
+        <a href="javascript:void(0)" class="topnav__icon"><i class="fas fa-bars"></i></a>
      </nav>
 
-    <section class="hero-section">
-        <div class="hero">
-        <h2 class="breather" >breathe...</h2>
+    <section class="hero">
+        <div class="hero__container">
+        <h2 class="hero__text" >breathe...</h2>
         </div>
     </section>
 
-        <h2 class="lead-welcome" id="maincontent" tabindex="0">Welcome!</h2>
-        <h3 class="lead-sub-welcome" tabindex="0">My name is Karen Peters. I am a Reiki Master with over 20 years of experience.</h3>
+      <section class="welcome">
+        <h2 id="maincontent" tabindex="0">Welcome!</h2>
+        <h3 class="welcome__subtitle" tabindex="0">My name is Karen Peters. <br> I am a Reiki Master with over 20 years of experience.</h3>
+      </section>
 
-        <div class="lead-container">
+        <section>
 
         <article class="lead" >
-            <p  tabindex="0" class="lead-title"><strong>Stressed? <br> Trouble sleeping? <br> Not feeling
+            <p  tabindex="0" class="lead__title"><strong>Stressed? <br> Trouble sleeping? <br> Not feeling
             your best? <br> Need focus to achieve a goal?</strong></p>
 
-            <p class="lead-subtitle" tabindex="0">Experience the <span class="bold-word">peace</span> and <span class="bold-word">joy</span> of Reiki! </p>
+            <p class="lead__subtitle" tabindex="0">Experience the <span class="bold-word">peace</span> and <span class="bold-word">joy</span> of Reiki! </p>
 
-            <p class="lead-paragraph"  tabindex="0"><span class="lead-word">Reiki</span> is a healing art of Japanese origin. Its name comes from the
+            <p class="lead__paragraph"  tabindex="0"><span class="lead-word">Reiki</span> is a healing art of Japanese origin. Its name comes from the
            Japanese words <span class="bold-word"><q>rei</q></span> which means universal life and <span class="bold-word"><q>ki</q></span> which
             means energy.
             It is the energy that flows all around us and through every living
@@ -92,10 +96,10 @@
             <a href="reiki.html" class="btn lead-btn">Learn More</a>
             </div>
         </article>  
-        </div>  
+        </section>  
 
-        <footer>
-            <img src="img/logo-pic-title.jpg"  alt="logo" class="footer-img">
+        <footer class="footer">
+            <img src="img/logo-pic-title.jpg"  alt="logo" class="footer__img">
             <ul>
                 <li><a alt="facebook-link" href="https://www.facebook.com/A-Joyful-Balance-Reiki-573634809470996/?__xts__[0]=68.ARAY4iub_cD6NnmoO6xWO9Duf2thEGawr5XaJMq9n0ZytY2Y3GgE1UtG7kPrDZdxwU_VI1i3A2goDQ1tYwhHOf6Zn_ODUDNaBRtXHskOLoIYhArWkRhfaEa-oB-_r8uw2ynaU47cdm9VpYmC0tJJdnV1D8K-tA48DWwN_tWEmTSvqFV9ugsQmLLv88iX1__DhuuvgDerrcSWsRjn_ONdgxbjLbkaGifWiZEHMVaEhrslcSXCsLeuKr-BqU5AhgdIdygJHJ__N3Qq9kWProPgts-Q9p3JUUga1EHhpIHwhPIRjZmIkvARj5-Gz1e17tpqdgrw34kRSao__9C0gxgsx9k_zg"><i class="fab fa-facebook"></i></a></li>
                 <li><a href="index.html">Home</a></li>

@@ -1,24 +1,25 @@
-body{
-    background-image: url("../img/mountain.jpeg");
+body {
+  background-image: url("../img/mountain.jpeg");
 }
+
 .test-section {
-    background-color: white;
-    margin: 6em auto;
-    box-shadow: 0 0 .2em #00b2e7;
-    max-width: 800px;
+  background-color: white;
+  margin: 6em auto;
+  -webkit-box-shadow: 0 0 .2em #00b2e7;
+          box-shadow: 0 0 .2em #00b2e7;
+  max-width: 800px;
 }
 
 .test-symbol {
-    max-width: 150px;
-    padding: 2em 0;
+  max-width: 150px;
+  padding: 2em 0;
 }
 
-@media only screen and (min-width: 700px){
-    .test-section {
-        border-radius: 10px;
-        width: 70%;
-        padding: 1em;
-   }
+@media only screen and (min-width: 700px) {
+  .test-section {
+    border-radius: 10px;
+    width: 70%;
+    padding: 1em;
+  }
 }
-
-
+/*# sourceMappingURL=test.css.map */
