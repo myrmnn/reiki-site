@@ -1,60 +1,58 @@
+@import
+'variables';
+
 .about {
     margin: 0 auto;
     background-color: white;
-    padding-bottom: 2em;  
+
+        @media only screen and (min-width: 600px){
+                max-width: 1200px;
+            }
+
+    &__para {
+        text-align: justify;
+        padding: 1em;
+        background-image: linear-gradient(to bottom, ivory, rgb(199, 240, 240)); 
+        max-width: 1200px;
+
+        @media only screen and (min-width: $tablet){
+            padding: 2em;
+            text-align: center;
+        }
+    }
+
+    &__span{
+        font-size: 1.5em;
+        text-align: center;
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    &__link {
+        color: $orange;
+    }
 }
-.about-img {
+
+.profile-img {
     padding: 0;
     margin-top: 1em;
-    margin-bottom: 2em;
+    padding-bottom: 2em;
+
+    & img {
+        border-radius: 5px;
+        box-shadow: 2px 4px 6px rgba(0,0,0,0.2);
+    }
 }
 
-p{
-    margin: 0 auto;
-    padding: 1em;
-    text-align: center;
-    line-height: 1.7;
-    font-weight: 500;
-    background-image: linear-gradient(to bottom, ivory, rgb(199, 240, 240)); 
-}
-
-span{
-    font-size: 1.5em;
-    text-align: center;
-    background-color: rgb(187, 240, 240);
-    display: block;
-    width: 100%;
-    margin: 0 auto;
-}
-
-a {
-    color: teal;
-}
-
-blockquote {
+.blockquote {
     font-size: 1.7em;
     color: indianred;
     font-style: italic;
+    margin: 1.5em auto;
 }
 
-.chakra{
+.chakra-img{
     width: 150px;
     margin: 2em auto;
-}
-
-.btn{
-    margin-top: 2em;
-}
-
-@media only screen and (min-width: 600px){
-    .about {
-        max-width: 1200px;
-    }
-    span{
-        font-size: 1.5em;
-        text-align: center;
-        width: 50%;
-        background-color: transparent;
-        margin: 0 auto;
-    }
 }

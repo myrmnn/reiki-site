@@ -1,63 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Buda:wght@300&display=swap");
 .about {
   margin: 0 auto;
   background-color: white;
-  padding-bottom: 2em;
-}
-
-.about-img {
-  padding: 0;
-  margin-top: 1em;
-  margin-bottom: 2em;
-}
-
-p {
-  margin: 0 auto;
-  padding: 1em;
-  text-align: center;
-  line-height: 1.7;
-  font-weight: 500;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(ivory), to(#c7f0f0));
-  background-image: linear-gradient(to bottom, ivory, #c7f0f0);
-}
-
-span {
-  font-size: 1.5em;
-  text-align: center;
-  background-color: #bbf0f0;
-  display: block;
-  width: 100%;
-  margin: 0 auto;
-}
-
-a {
-  color: teal;
-}
-
-blockquote {
-  font-size: 1.7em;
-  color: indianred;
-  font-style: italic;
-}
-
-.chakra {
-  width: 150px;
-  margin: 2em auto;
-}
-
-.btn {
-  margin-top: 2em;
 }
 
 @media only screen and (min-width: 600px) {
   .about {
     max-width: 1200px;
   }
-  span {
-    font-size: 1.5em;
+}
+
+.about__para {
+  text-align: justify;
+  padding: 1em;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(ivory), to(#c7f0f0));
+  background-image: linear-gradient(to bottom, ivory, #c7f0f0);
+  max-width: 1200px;
+}
+
+@media only screen and (min-width: 768px) {
+  .about__para {
+    padding: 2em;
     text-align: center;
-    width: 50%;
-    background-color: transparent;
-    margin: 0 auto;
   }
+}
+
+.about__span {
+  font-size: 1.5em;
+  text-align: center;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.about__link {
+  color: #EE6352;
+}
+
+.profile-img {
+  padding: 0;
+  margin-top: 1em;
+  padding-bottom: 2em;
+}
+
+.profile-img img {
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.blockquote {
+  font-size: 1.7em;
+  color: indianred;
+  font-style: italic;
+  margin: 1.5em auto;
+}
+
+.chakra-img {
+  width: 150px;
+  margin: 2em auto;
 }
 /*# sourceMappingURL=about.css.map */
