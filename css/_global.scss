@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Bad+Script&display=swap');
 //variables
 //colors
 $primaryBlue: #56b6df;
@@ -7,6 +6,7 @@ $orange: #EE6352;
 $yellow: rgb(255, 252, 235);
 
 //fonts
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Buda:wght@300&display=swap');
 $bodyFont: 'Buda', cursive;
 $headingFont: 'Annie Use Your Telescope', cursive;
 
@@ -310,6 +310,7 @@ p {
         & a.topnav__icon {
             float: right;
             display: block;
+            margin-bottom: -5px;
           }
         
         &.responsive {

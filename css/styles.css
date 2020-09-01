@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Bad+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Buda:wght@300&display=swap");
 .dropdown-is-visible {
   display: block;
 }
@@ -316,6 +316,7 @@ p {
   .topnav a.topnav__icon {
     float: right;
     display: block;
+    margin-bottom: -5px;
   }
   .topnav.responsive {
     position: absolute;
