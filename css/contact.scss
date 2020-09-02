@@ -1,3 +1,5 @@
+@import 'variables';
+
 .contact-section {
     background-color: white;
     // padding-top: 2em;
@@ -45,7 +47,7 @@ ul {
 
 .brand {
     text-align: center;
-    font-family: var(--f-logo);
+    font-family: $headingFont;
     padding: 0;
 }
 
@@ -53,7 +55,7 @@ ul {
     max-width: 600px;
     min-width: 300px;
     margin: 0 auto;
-    border: 1px solid var(--c-primary);
+    border: 1px solid $primaryBlue;
     border-radius: 5px;
 }
 
@@ -62,7 +64,7 @@ ul {
 }
 
 .company-info {
-    background: aliceblue;
+    background: $secondaryBlue;
 }
 
 .company-info h3, 
@@ -87,7 +89,7 @@ ul {
 }
 
 .form-icon{
-    color: var(--c-primary);
+    color: $primaryBlue;
     font-size: 2em;
     letter-spacing: 2px;
 }
@@ -113,7 +115,7 @@ ul {
     width: 75%;
     padding: 1em;
     text-align: center;
-    font-family: --f-body;
+    font-family: $bodyFont;
     font-size: .75em;
     outline-color: none;
     transition: all 2s ease;
@@ -121,7 +123,7 @@ ul {
 
 .contact form input:hover,
 .contact form textarea:hover {
-    outline-color: rgb(238, 148, 116);
+    outline-color: $orange;
 }
 
 @media screen and (min-width: 1000px){

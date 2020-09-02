@@ -108,6 +108,7 @@ hr {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba($orange, .75), rgba(0, 0, 0, 0));
 }
 
+
 //buttons
 .btn{
     padding: 0.5em 1em;
@@ -130,10 +131,6 @@ hr {
 
     &:hover{
     background-color: $primaryBlue;
-    }
-
-    &--block{
-        display: block;
     }
 }
 
