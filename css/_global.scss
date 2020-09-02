@@ -101,6 +101,14 @@ p {
     margin: 0 auto;
 }
 
+hr {
+    margin-top: 1em;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba($orange, .75), rgba(0, 0, 0, 0));
+}
+
+
 //buttons
 .btn{
     padding: 0.5em 1em;
@@ -123,10 +131,6 @@ p {
 
     &:hover{
     background-color: $primaryBlue;
-    }
-
-    &--block{
-        display: block;
     }
 }
 

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Buda:wght@300&display=swap");
 body {
   background-image: url("../img/mountain.jpeg");
   background-attachment: fixed;
@@ -6,24 +7,37 @@ body {
   background-position: top;
 }
 
-.test-section {
+.page-subtitle {
+  font-style: italic;
+  margin-top: -10px;
+  padding-bottom: 10px;
+}
+
+.testimonial {
   background-color: white;
   margin: 6em auto;
   -webkit-box-shadow: 0 0 .2em #00b2e7;
           box-shadow: 0 0 .2em #00b2e7;
   max-width: 800px;
+  padding-bottom: 1em;
 }
 
-.test-symbol {
-  max-width: 150px;
-  padding: 2em 0;
-}
-
-@media only screen and (min-width: 700px) {
-  .test-section {
+@media screen and (min-width: 768px) {
+  .testimonial {
     border-radius: 10px;
     width: 70%;
     padding: 1em;
+  }
+}
+
+.testimonial__img {
+  width: 100px;
+  padding: 2em 0;
+}
+
+@media screen and (min-width: 768px) {
+  .testimonial__img {
+    width: 125px;
   }
 }
 /*# sourceMappingURL=test.css.map */

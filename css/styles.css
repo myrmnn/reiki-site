@@ -103,6 +103,14 @@ p {
   margin: 0 auto;
 }
 
+hr {
+  margin-top: 1em;
+  border: 0;
+  height: 1px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(rgba(238, 99, 82, 0.75)), to(rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(238, 99, 82, 0.75), rgba(0, 0, 0, 0));
+}
+
 .btn {
   padding: 0.5em 1em;
   color: whitesmoke;
@@ -126,10 +134,6 @@ p {
 
 .btn:hover {
   background-color: #56b6df;
-}
-
-.btn--block {
-  display: block;
 }
 
 .logo {

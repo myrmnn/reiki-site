@@ -57,15 +57,13 @@
         <a href="javascript:void(0)" class="topnav__icon"><i class="fas fa-bars"></i></a>
      </nav>
 
-     <div class="form-wrapper">
- 
-        <form name="intake" method="POST" data-netlify="true">
-            <section class="banner">
-                <h2 class="banner-title">A Joyful Balance Reiki</h2>
-                <h2 class="banner-subtitle" id="maincontent">Intake Form</h2>
+        <form name="intake" method="POST" data-netlify="true" class="intake">
+            <section class="intake__banner">
+                <!-- <h2 class="intake__title">A Joyful Balance Reiki</h2> -->
+                <h2 id="maincontent">Please take a moment <br> to complete our intake form</h2>
             </section>
     
-            <label for="name">Your Name:</label>  
+            <label name="name" for="name">Your Name:</label>  
             <input type="text" name="name">
         
         
@@ -107,7 +105,7 @@
         <textarea name="concerns-info" id="concerns-info" cols="30" rows="10"></textarea>
     
 
-        <p class="consent"><strong>Informed Consent - </strong>
+        <p class="intake__banner"><strong>Informed Consent - </strong>
 
          I hereby voluntarily request and consent to receive
          Reiki services from Karen Peters of A Joyful Balance Reiki.
@@ -137,8 +135,9 @@
          <label for="agreement">Agreement:</label>
          <input type="text" id="agreement" name="agreement" class="agree" required>
 
-         <input type="submit" value="Send Info" class="btn btn--block">    
+         <button type="submit" class="btn">Submit</button>   
         </form>
+   
 
      
         <footer class="footer">

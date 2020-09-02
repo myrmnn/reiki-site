@@ -24,30 +24,13 @@ icon.addEventListener('click', function () {
     }
 });
 
-// function fixNav() {
-//   if(window.scrollY >= nav.offsetTop){
-//       nav.classList.add('fixed-nav');
-//       document.body.style.paddingTop = nav.offsetHeight + "px";
-//   }
-
-//   if(window.scrollY <= nav.offsetHeight){
-//       nav.classList.remove('fixed-nav')
-//       document.body.style.paddingTop = 0;
-//   }
-// }
-
-// window.addEventListener('scroll', fixNav);
-
-
 //Reveal On Scroll
-
 
 function hideInitially() {
   itemsToReveal.forEach(el => {
     el.classList.add('hidden-item');
     el.isRevealed = false;
   });
-  // itemsToReveal[itemsToReveal.length-1].isLastItem = true;
 }
 
 window.addEventListener('scroll', throttle(calcCaller, 200));
@@ -61,9 +44,6 @@ function calculate(el) {
         el.classList.add('hidden-item--now-visible');
         el.isRevealed = true;
     }
-    // if(el.isLastItem){
-    //   window.removeEventListener('scroll', throttle(calcCaller, 300));
-    // }
   }
 }
 
@@ -85,3 +65,32 @@ function throttle(fn, wait) {
       }
     };
 }
+
+//form 
+
+const inputs = document.querySelectorAll('input');
+const labels = document.querySelectorAll('label');
+const textareas = document.querySelectorAll('textarea');
+const orange = '#EE6352';
+
+
+
+inputs.forEach(input => input.addEventListener('focus', () => {
+  labels.forEach(label => {
+    label.style.color = 'black';
+  });
+  if (document.activeElement){
+    input.previousElementSibling.style.color = orange;
+
+  }
+}))
+
+textareas.forEach(textarea => textarea.addEventListener('focus', () => {
+  labels.forEach(label => {
+    label.style.color = 'black';
+  });
+  if (document.activeElement){
+    textarea.previousElementSibling.style.color = orange;
+
+  }
+}))

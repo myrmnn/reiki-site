@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Buda:wght@300&display=swap");
 .contact-section {
   background-color: white;
   max-width: 600px;
@@ -43,7 +44,7 @@ ul {
 
 .brand {
   text-align: center;
-  font-family: var(--f-logo);
+  font-family: "Annie Use Your Telescope", cursive;
   padding: 0;
 }
 
@@ -51,7 +52,7 @@ ul {
   max-width: 600px;
   min-width: 300px;
   margin: 0 auto;
-  border: 1px solid var(--c-primary);
+  border: 1px solid #56b6df;
   border-radius: 5px;
 }
 
@@ -60,7 +61,7 @@ ul {
 }
 
 .company-info {
-  background: aliceblue;
+  background: #d2e8fc;
 }
 
 .company-info h3,
@@ -85,7 +86,7 @@ ul {
 }
 
 .form-icon {
-  color: var(--c-primary);
+  color: #56b6df;
   font-size: 2em;
   letter-spacing: 2px;
 }
@@ -110,7 +111,7 @@ ul {
   width: 75%;
   padding: 1em;
   text-align: center;
-  font-family: --f-body;
+  font-family: "Buda", cursive;
   font-size: .75em;
   outline-color: none;
   -webkit-transition: all 2s ease;
@@ -119,7 +120,7 @@ ul {
 
 .contact form input:hover,
 .contact form textarea:hover {
-  outline-color: #ee9474;
+  outline-color: #EE6352;
 }
 
 @media screen and (min-width: 1000px) {
