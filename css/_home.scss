@@ -7,10 +7,11 @@
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position-y: -30px;
     height: 40vh;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     font-size: 1.7em;
 
     @media only screen and (min-width: 400px){
@@ -18,9 +19,14 @@
     }
 
     @media only screen and (min-width: $tablet){
-       font-size: 1.8em;
+        font-size: 1.8em;
         height: 40vh;
         background-position-y: -150px;
+        align-items: flex-start;
+    }
+
+    @media only screen and (min-width: 1440px){
+        background-position-y: -200px;
 
     }
 }
@@ -34,11 +40,16 @@
     color: $primaryBlue;
     border-radius: 100%;
     -webkit-animation: breathe 11s infinite linear;
+
+    @media only screen and (min-width: $tablet){
+        margin-top: 25px;
+    }
 }
 
 .welcome{
     &__title{
-    background-color: $yellow;
+    padding: .25em;
+    background-color: $secondaryBlue;
     box-shadow: 2px 3px 4px rgba(0,0,0,0.2);
 
     }
