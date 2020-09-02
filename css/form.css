@@ -29,6 +29,8 @@
   display: block;
   padding: .25em;
   font-size: 1.3rem;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 .intake input,
