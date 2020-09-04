@@ -1,34 +1,33 @@
-@import url("https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Buda:wght@300&display=swap");
-.contact-section {
+.contact {
   background-color: white;
   max-width: 600px;
   min-width: 300px;
   margin: 0 auto;
 }
 
-.contact-section p {
-  font-size: 1.4rem;
-}
-
-/* 
-.notice{
-    font-weight: 600;
-    padding: 1em;
-    background-color: #ffea8e;
-}
-
-.notice-img{
-    width: 60%;
-} */
-.img-rates {
-  width: 100%;
-}
-
-.contact-section-titles-main {
+.contact__title {
   color: black;
   font-size: 2em;
   padding-top: 0;
-  margin-top: 0;
+  margin-top: 1em;
+}
+
+.contact__notice {
+  margin: 1.5em 0;
+  padding: 1em;
+  background: #81c9e7;
+}
+
+.contact__notice span {
+  color: #e93924;
+  display: block;
+  background: white;
+  font-weight: 600;
+  padding: .25em;
+  margin: .5em 0;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .container {
@@ -44,7 +43,7 @@ ul {
 
 .brand {
   text-align: center;
-  font-family: "Annie Use Your Telescope", cursive;
+  font-family: "Indie Flower", cursive;
   padding: 0;
 }
 
@@ -53,7 +52,6 @@ ul {
   min-width: 300px;
   margin: 0 auto;
   border: 1px solid #56b6df;
-  border-radius: 5px;
 }
 
 .wrapper > * {
@@ -127,5 +125,46 @@ ul {
   .img-rates {
     width: 60%;
   }
+}
+
+.heart {
+  position: relative;
+  height: 110px;
+  width: 110px;
+  margin: 10px auto;
+  background: white;
+  border-radius: 50%;
+  border: 2px solid #e93924;
+  -webkit-box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  height: 80px;
+  width: 50px;
+  background: #b83f3f;
+  background: #e93924;
+  border-radius: 50px 50px 0 0;
+}
+
+.heart::before {
+  left: 53px;
+  top: 20px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+}
+
+.heart::after {
+  left: 4px;
+  top: 20px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
 }
 /*# sourceMappingURL=contact.css.map */

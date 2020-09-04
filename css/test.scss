@@ -10,9 +10,9 @@ body{
 }
 
 .page-subtitle {
-    font-style: italic;
-    margin-top: -10px;
     padding-bottom: 10px;
+    font-family: $bodyFont;
+    font-size: 1.2rem;
 }
 
 .testimonial {

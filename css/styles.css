@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Buda:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
 .dropdown-is-visible {
   display: block;
 }
@@ -56,16 +57,9 @@ body {
   text-align: center;
 }
 
-.page-titles {
-  font-family: "Annie Use Your Telescope", cursive;
-  font-size: 1em;
-  background: white;
-  width: 100%;
-}
-
 @media only screen and (min-width: 300px) and (max-width: 320px) {
   .page-titles {
-    font-family: "Annie Use Your Telescope", cursive;
+    font-family: "Indie Flower", cursive;
     font-size: 1em;
     background: white;
     width: 100%;
@@ -74,7 +68,7 @@ body {
 
 h1 {
   font-size: 1.5em;
-  font-family: "Annie Use Your Telescope", cursive;
+  font-family: "Indie Flower", cursive;
   padding: 0.5em;
 }
 
@@ -85,8 +79,7 @@ h1 a {
 
 h2 {
   color: #56b6df;
-  font-size: 2em;
-  padding: .5em;
+  font-size: 2rem;
   letter-spacing: 1px;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
 }
@@ -94,6 +87,14 @@ h2 {
 h3 {
   color: #56b6df;
   font-size: 1.5em;
+}
+
+.page-titles {
+  font-family: "Indie Flower", cursive;
+  font-size: 1rem;
+  padding: .25em;
+  background: #d2e8fc;
+  width: 100%;
 }
 
 p {
@@ -192,9 +193,10 @@ hr {
 
 .logo__title {
   font-size: 1.5rem;
+  margin-left: 45px;
   color: whitesmoke;
   font-style: italic;
-  font-family: "Annie Use Your Telescope", cursive;
+  font-family: "Indie Flower", cursive;
 }
 
 @media screen and (min-width: 410px) {
@@ -226,8 +228,8 @@ hr {
   width: 100%;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
-  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-          box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .topnav a {
@@ -394,6 +396,7 @@ hr {
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position-y: -30px;
   height: 40vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -401,9 +404,9 @@ hr {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 1.7em;
 }
 
@@ -418,6 +421,15 @@ hr {
     font-size: 1.8em;
     height: 40vh;
     background-position-y: -150px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .hero {
+    background-position-y: -200px;
   }
 }
 
@@ -433,8 +445,15 @@ hr {
   -webkit-animation: breathe 11s infinite linear;
 }
 
+@media only screen and (min-width: 768px) {
+  .hero__text {
+    margin-top: 25px;
+  }
+}
+
 .welcome__title {
-  background-color: #fff1db;
+  padding: .25em;
+  background-color: #d2e8fc;
   -webkit-box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.2);
           box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.2);
 }
