@@ -27,7 +27,6 @@
         padding: .25em;
         font-size: 1.3rem;
         transition: all 1s ease;
-
     }
 
     & input,
@@ -39,6 +38,10 @@
     transition: all 1s ease;
     font-family: $bodyFont;
     width: 80%;
+         
+        &::placeholder{
+            color: transparent;
+        }
 
         &:focus,
         &:focus {

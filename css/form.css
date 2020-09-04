@@ -45,6 +45,26 @@
   width: 80%;
 }
 
+.intake input::-webkit-input-placeholder,
+.intake textarea::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.intake input:-ms-input-placeholder,
+.intake textarea:-ms-input-placeholder {
+  color: transparent;
+}
+
+.intake input::-ms-input-placeholder,
+.intake textarea::-ms-input-placeholder {
+  color: transparent;
+}
+
+.intake input::placeholder,
+.intake textarea::placeholder {
+  color: transparent;
+}
+
 .intake input:focus, .intake input:focus,
 .intake textarea:focus,
 .intake textarea:focus {
