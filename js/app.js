@@ -11,7 +11,6 @@ const dropbtn = document.querySelectorAll('.topnav__dropbtn');
 const dropcontent = document.querySelectorAll('.topnav__dropdown-content');
 const carrot = document.querySelectorAll('.topnav__carrot');
 
-
 dropbtn.forEach(el => el.addEventListener('click', function() {
   el.nextElementSibling.classList.toggle('topnav__dropdown-content--is-visible');
   el.firstElementChild.classList.toggle('rotate');
@@ -34,7 +33,6 @@ function hideInitially() {
 }
 
 window.addEventListener('scroll', throttle(calcCaller, 200));
-
 
 function calculate(el) {
   if(window.pageYOffset + browserHeight > el.offsetTop){
@@ -68,12 +66,12 @@ function throttle(fn, wait) {
 
 //form 
 
+const orange = '#EE6352';
 const inputs = document.querySelectorAll('input');
 const labels = document.querySelectorAll('label');
 const textareas = document.querySelectorAll('textarea');
-const orange = '#EE6352';
-
-
+const form = document.querySelector('form');
+const main = document.querySelector('main');
 
 inputs.forEach(input => input.addEventListener('focus', () => {
   labels.forEach(label => {
@@ -81,7 +79,6 @@ inputs.forEach(input => input.addEventListener('focus', () => {
   });
   if (document.activeElement){
     input.previousElementSibling.style.color = orange;
-
   }
 }))
 
@@ -91,6 +88,13 @@ textareas.forEach(textarea => textarea.addEventListener('focus', () => {
   });
   if (document.activeElement){
     textarea.previousElementSibling.style.color = orange;
-
   }
 }))
+
+document.addEventListener('click', function(e){
+  if(e.target === form || e.target === main){
+    labels.forEach(label => {
+      label.style.color = 'black';
+    });
+  }
+})

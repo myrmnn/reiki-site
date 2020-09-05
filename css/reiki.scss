@@ -23,6 +23,10 @@ body{
             box-shadow: 0.5px 0.5px 0.5em rgba(0,0,0,0.3);
             border-radius: 10px;
         }
+    
+    &__title{
+        margin-top: 1em;
+    }
 
     &__para {
         text-align: justify;
