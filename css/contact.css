@@ -1,25 +1,90 @@
-.contact {
+.heart {
+  opacity: .7;
+  position: relative;
+  height: 100px;
+  width: 100px;
+  margin: 10px auto;
+  background: whitesmoke;
+  border-radius: 50%;
+  border: 2px solid #2ba3d7;
+  -webkit-box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  height: 60px;
+  width: 40px;
+  background: #b83f3f;
+  background: #2ba3d7;
+  border-radius: 50px 50px 0 0;
+}
+
+.heart::before {
+  left: 48px;
+  top: 23px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+}
+
+.heart::after {
+  left: 9px;
+  top: 23px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+}
+
+.notice {
   background-color: white;
-  max-width: 600px;
+  max-width: 700px;
   min-width: 300px;
   margin: 0 auto;
 }
 
-.contact__title {
+.notice__title {
   color: black;
   font-size: 2em;
   padding-top: 0;
   margin-top: 1em;
 }
 
-.contact__notice {
+.notice__message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 1.5em 0;
-  padding: 1em;
-  background: #81c9e7;
+  padding: .25em;
+  font-weight: 600;
+  background-color: rgba(210, 232, 252, 0.5);
+  background-image: url("/img/world.png");
+  background-blend-mode: lighten;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-.contact__notice span {
+@media screen and (min-width: 500px) {
+  .notice__message {
+    padding: 2.7em;
+  }
+}
+
+.notice__message span {
   color: #e93924;
+  opacity: .7;
   display: block;
   background: white;
   font-weight: 600;
@@ -30,141 +95,78 @@
           box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1em;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-.brand {
-  text-align: center;
-  font-family: "Indie Flower", cursive;
-  padding: 0;
-}
-
-.wrapper {
-  max-width: 600px;
-  min-width: 300px;
+.contact-section {
   margin: 0 auto;
+}
+
+.contact-section__wrapper {
+  max-width: 700px;
+  min-width: 300px;
   border: 1px solid #56b6df;
 }
 
-.wrapper > * {
+.contact-section__company-info {
+  background-color: rgba(210, 232, 252, 0.7);
+  background-repeat: no-repeat;
+  background-image: url("/img/lotus-flower (2).png");
+  background-position-y: 85px;
+  background-position-x: 50%;
+  background-blend-mode: lighten;
+}
+
+.contact-section__heading {
+  color: #56b6df;
+  padding: 1em;
+  background: white;
+  opacity: .7;
+}
+
+.contact-section__ul {
+  font-size: 1.2em;
+  list-style: none;
   padding: 1em;
 }
 
-.company-info {
-  background: #d2e8fc;
-}
-
-.company-info h3,
-.company-info ul {
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-.link-wrapper {
-  font-size: 1.2em;
-  padding-top: 1.5em;
-}
-
-.form-links {
-  margin-bottom: 1.5em;
-  font-size: 1.2em;
-}
-
-.link-wrapper a {
+.contact-section__ul a {
   text-decoration: none;
   color: black;
 }
 
-.form-icon {
-  color: #56b6df;
-  font-size: 2em;
-  letter-spacing: 2px;
+.contact-section__icon {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 
-.contact {
-  text-align: center;
-}
-
-/* form styles */
-.contact form label {
-  display: block;
+.contact-section__links {
+  margin-bottom: 1.5em;
   font-weight: 600;
-  margin: 1em;
+  font-size: 1.5rem;
 }
 
-.contact form p {
-  margin: 0;
+.contact-section label {
+  margin-bottom: 1em;
+  display: block;
+  padding: .25em;
+  font-size: 1.3rem;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
-.contact form input,
-.contact form textarea {
-  width: 75%;
-  padding: 1em;
+.contact-section input,
+.contact-section textarea {
+  margin-bottom: 1em;
+  padding: .25em;
+  font-size: 1.1rem;
   text-align: center;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
   font-family: "Buda", cursive;
-  font-size: .75em;
-  outline-color: none;
-  -webkit-transition: all 2s ease;
-  transition: all 2s ease;
+  width: 80%;
 }
 
-.contact form input:hover,
-.contact form textarea:hover {
+.contact-section input:focus, .contact-section input:focus,
+.contact-section textarea:focus,
+.contact-section textarea:focus {
   outline-color: #EE6352;
-}
-
-@media screen and (min-width: 1000px) {
-  .img-rates {
-    width: 60%;
-  }
-}
-
-.heart {
-  position: relative;
-  height: 110px;
-  width: 110px;
-  margin: 10px auto;
-  background: white;
-  border-radius: 50%;
-  border: 2px solid #e93924;
-  -webkit-box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
-          box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
-}
-
-.heart::before,
-.heart::after {
-  content: "";
-  position: absolute;
-  height: 80px;
-  width: 50px;
-  background: #b83f3f;
-  background: #e93924;
-  border-radius: 50px 50px 0 0;
-}
-
-.heart::before {
-  left: 53px;
-  top: 20px;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  -webkit-transform-origin: 0 100%;
-          transform-origin: 0 100%;
-}
-
-.heart::after {
-  left: 4px;
-  top: 20px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  -webkit-transform-origin: 100% 100%;
-          transform-origin: 100% 100%;
 }
 /*# sourceMappingURL=contact.css.map */
