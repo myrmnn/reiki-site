@@ -74,6 +74,11 @@
   background-repeat: no-repeat;
   -webkit-box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
           box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  -webkit-transform: translatey(-50px);
+          transform: translatey(-50px);
+  -webkit-animation: slideUp 2s ease forwards;
+          animation: slideUp 2s ease forwards;
 }
 
 @media screen and (min-width: 500px) {
@@ -168,5 +173,21 @@
 .contact-section textarea:focus,
 .contact-section textarea:focus {
   outline-color: #EE6352;
+}
+
+@-webkit-keyframes slideUp {
+  100% {
+    -webkit-transform: translatey(0);
+            transform: translatey(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  100% {
+    -webkit-transform: translatey(0);
+            transform: translatey(0);
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=contact.css.map */

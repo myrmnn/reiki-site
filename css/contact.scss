@@ -68,6 +68,10 @@
     background-position: center;
     background-repeat: no-repeat;
     box-shadow: 2px 4px 6px rgba(0,0,0,0.2);
+    opacity: 0;
+    transform: translatey(-50px);
+    animation: slideUp 2s ease forwards;
+
 
     @media screen and (min-width: 500px){
         padding: 2.7em;
@@ -166,4 +170,11 @@
     }
     
  
+}
+
+@keyframes slideUp {
+    100% {
+        transform: translatey(0);
+        opacity: 1;
+    }
 }
