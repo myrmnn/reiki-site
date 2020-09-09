@@ -4,13 +4,16 @@
   display: block;
 }
 
-.rotate {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+.fa-caret-down {
   -webkit-transition: -webkit-transform .7s ease;
   transition: -webkit-transform .7s ease;
   transition: transform .7s ease;
   transition: transform .7s ease, -webkit-transform .7s ease;
+}
+
+.fa-caret-down.rotate {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .hidden-item {
@@ -145,6 +148,12 @@ hr {
   padding: 10px 0;
 }
 
+@media screen and (max-width: 700px) {
+  .logo {
+    padding-top: 0;
+  }
+}
+
 .logo__container {
   position: relative;
   height: 120px;
@@ -162,6 +171,8 @@ hr {
   min-width: 320px;
   margin: 0 auto;
   border-radius: 5px;
+  -webkit-box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (max-width: 700px) {
@@ -199,6 +210,7 @@ hr {
   color: whitesmoke;
   font-style: italic;
   font-family: "Indie Flower", cursive;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (min-width: 410px) {
@@ -209,7 +221,7 @@ hr {
 
 @media screen and (min-width: 600px) {
   .logo__title {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     letter-spacing: 2.7px;
   }
 }
@@ -241,14 +253,11 @@ hr {
   float: left;
   color: black;
   text-align: center;
-  padding: 16px 16px;
   font-size: 1.5rem;
   text-decoration: none;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
 }
 
-.topnav a.active, .topnav a:hover {
+.topnav a.active, .topnav a:hover, .topnav a:focus {
   color: white;
 }
 
@@ -266,14 +275,14 @@ hr {
   border: none;
   outline: none;
   color: black;
-  padding: 16px 16px;
+  padding: 16px;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
   cursor: pointer;
 }
 
-.topnav__dropdown .topnav__dropbtn:hover {
+.topnav__dropdown .topnav__dropbtn:hover, .topnav__dropdown .topnav__dropbtn:focus {
   color: white;
 }
 
@@ -305,6 +314,7 @@ hr {
 @media screen and (max-width: 820px) {
   .topnav {
     display: block;
+    padding: 16px 0;
   }
   .topnav a:not(:first-child), .topnav .topnav__dropdown .topnav__dropbtn {
     display: none;
@@ -313,6 +323,7 @@ hr {
     float: right;
     display: block;
     margin-bottom: -5px;
+    padding-right: 5px;
   }
   .topnav.responsive {
     position: absolute;
@@ -321,18 +332,20 @@ hr {
   }
   .topnav.responsive a.topnav__icon {
     position: absolute;
-    right: 0;
+    right: 5px;
     top: 0;
   }
   .topnav.responsive a {
     float: none;
     display: block;
+    padding: 16px 0;
   }
   .topnav.responsive .topnav__dropdown {
     float: none;
   }
   .topnav.responsive .topnav__dropdown-content {
     position: relative;
+    border-radius: 0;
   }
   .topnav.responsive .topnav__dropdown .topnav__dropbtn {
     display: block;
@@ -409,7 +422,6 @@ hr {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 1.7em;
 }
 
 @media only screen and (min-width: 400px) {
@@ -420,7 +432,6 @@ hr {
 
 @media only screen and (min-width: 768px) {
   .hero {
-    font-size: 1.8em;
     height: 40vh;
     background-position-y: -150px;
     -webkit-box-align: start;
@@ -436,6 +447,7 @@ hr {
 }
 
 .hero__text {
+  font-size: 3rem;
   height: 100%;
   font-family: "Buda", cursive;
   font-style: italic;

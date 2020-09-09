@@ -12,14 +12,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.7em;
 
     @media only screen and (min-width: 400px){
         background-position-y: -100px;
     }
 
     @media only screen and (min-width: $tablet){
-        font-size: 1.8em;
         height: 40vh;
         background-position-y: -150px;
         align-items: flex-start;
@@ -32,6 +30,7 @@
 }
 
 .hero__text {
+    font-size: 3rem;
     height: 100%;
     font-family: $bodyFont;
     font-style: italic;

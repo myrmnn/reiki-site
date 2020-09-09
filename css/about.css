@@ -15,6 +15,8 @@
   background-image: -webkit-gradient(linear, left top, left bottom, from(ivory), to(#c7f0f0));
   background-image: linear-gradient(to bottom, ivory, #c7f0f0);
   max-width: 1200px;
+  -webkit-box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 @media only screen and (min-width: 768px) {

@@ -63,55 +63,51 @@
 
 
    
-        <main class="notice" id="maincontent">
+        <main id="maincontent">
 
-            <article class="notice__message" tabindex="0">
-                <div>
-                    <div class="heart"></div>
-                <p>
-                Due to the current world events A Joyful Balance Reiki recognizes that there is an unprecedented need for healing support. We want to make Reiki more accessible. Our rates have been significantly reduced until further notice.
-                <span>Wishing peace and healing to all.</span>
-                </p>
+            <section class="notice">
+                <article class="notice__message" tabindex="0">
+            <div>
+            <div class="heart"></div>
+            <p>
+            Due to the current world events A  Joyful Balance Reiki recognizes that there is an unprecedented need for healing support. We want to make Reiki more accessible. Our rates have been significantly reduced until further notice. In person sessions have been temporarily suspended.
+            
+            <span>Wishing peace and healing to all.</span>
+            
+            </p>
             </div>
             </article>
+        </section>
 
-            <h2 class="notice__title">
+        <section class="rates row">
+
+        <div class="rates__first-col column">
+                <h2 class="rates__title">
                 Ready to join me?
-            </h2>
-
-            <article class="notice__lead" tabindex="0">
+                </h2>
+                <article class="rates__lead" tabindex="0">
                 <p>
-                Contact me today to find out about how Reiki may help you! I look forward to hearing from you and helping you in your journey of returning to a joyful balance.
+                Contact me today to find out how Reiki may help you! I look forward to hearing from you and helping you in your journey of returning to a joyful balance.
                 </p>
-            </article>
-
-            <article class="notice__rates" tabindex="0">
-                <!-- <div class="heart"></div> -->
-
+                </article>
+        </div>
+        
+        <div class="rates__second-col column">
+                <article class="rates__pricing" tabindex="0">
                 <p>
                 One hour distance Reiki session $40.00.
                 </p>
-
                 <p>
                 Three one hour distance Reiki session package $99.00
                 </p>
-
-              
-                <p>  
-                    *Consecutive sessions build upon each other, magnifying the power of Reiki. We offer a discounted 3 session package to encourage you to explore Reiki on a deeper level.
-                </p>
-
                 <p>
-                    In person sessions have been temporarily suspended.
+                *Consecutive sessions build upon each other, magnifying the power of Reiki. We offer a discounted 3 session package to encourage you to explore Reiki on a deeper level.
                 </p>
-            </article>
-            
-      
-    <!-- </div> -->
+                </article>
+        </div>
+    </section>
 
-    <article class="contact-section reveal">
-        <div class="contact-section__wrapper">
-
+        <div class="contact-section reveal">
 
             <div class="contact-section__company-info">
                  <h2 role="heading" class="contact-section__heading" tabindex="0">Get in Touch!</h2>
@@ -132,16 +128,16 @@
                 <form name="contact" method="POST" data-netlify="true">
                     
                         <label for="name">Name:</label>
-                        <input type="text" name="name" id="namw" required>
+                        <input class="input" type="text" name="name" id="name" required>
                    
                         <label for="email">Email:</label>
-                        <input type="text" name="email" id="email" required>
+                        <input class="input" type="text" name="email" id="email" required>
                  
                         <label for="phone">Phone number:</label>
-                        <input type="tel" name="phone" id="phone">
+                        <input class="input" type="tel" name="phone" id="phone">
                
                         <label for="message">Message:</label>
-                        <textarea name="message" id="message" rows="10"></textarea>
+                        <textarea class="input" name="message" id="message" rows="10"></textarea>
                   
             <div class="btn-div">
                 <button type="submit" class="btn">Send Message</button>
@@ -150,7 +146,6 @@
             </div>
 
         </div>
-    </article>
 </main>
 
 

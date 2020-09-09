@@ -14,6 +14,8 @@
         padding: 1em;
         background-image: linear-gradient(to bottom, ivory, rgb(199, 240, 240)); 
         max-width: 1200px;
+    box-shadow: 2px 4px 6px rgba(0,0,0,0.2);
+
 
         @media only screen and (min-width: $tablet){
             padding: 2em;

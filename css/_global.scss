@@ -3,9 +3,12 @@
     display: block;
 }
 
-.rotate{
-    transform: rotate(180deg);
+.fa-caret-down{
     transition: transform .7s ease;
+}
+
+.fa-caret-down.rotate{
+    transform: rotate(180deg);
 }
 
 .hidden-item{
@@ -143,6 +146,10 @@ hr {
     position: relative;
     padding: 10px 0;
 
+    @media screen and (max-width: 700px){
+        padding-top: 0;
+        }
+
     &__container {
         position: relative;
         height: 120px;
@@ -154,6 +161,7 @@ hr {
         min-width: 320px;
         margin: 0 auto;
         border-radius: 5px;
+        box-shadow: 2px 3px 4px rgba(0,0,0,0.2);
 
         @media screen and (max-width: 700px){
         border-radius: 0;
@@ -186,19 +194,22 @@ hr {
         color: whitesmoke;
         font-style: italic;
         font-family: $headingFont;
+        text-shadow: 1px 1px rgba(0,0,0,0.2);
 
         @media screen and (min-width: 410px){
                 font-size: 2rem;
         }
 
         @media screen and (min-width: 600px){
-                font-size: 2.5rem;
+                font-size: 2.4rem;
                 letter-spacing: 2.7px;
         }
     }
 }
 
 //navigation
+    
+
 .topnav{
     background-color: $primaryBlue;
     overflow: hidden;
@@ -215,13 +226,12 @@ hr {
         float: left;
         color: black;
         text-align: center;
-        padding: 16px 16px;
         font-size: 1.5rem;
         text-decoration: none;
-        transition: all .3s ease;
 
         &.active,
-        &:hover {
+        &:hover,
+        &:focus {
             color: white;
         }
     }
@@ -240,13 +250,14 @@ hr {
         border: none;
         outline: none;
         color: black;
-        padding: 16px 16px;
+        padding: 16px;
         background-color: inherit;
         font-family: inherit;
         margin: 0;
         cursor: pointer;
 
-        &:hover{
+        &:hover,
+        &:focus {
             color: white;
         }
     }
@@ -281,6 +292,8 @@ hr {
 
     .topnav{
         display: block;
+        padding: 16px 0;
+
 
         & a:not(:first-child), .topnav__dropdown .topnav__dropbtn {
             display: none;
@@ -290,6 +303,7 @@ hr {
             float: right;
             display: block;
             margin-bottom: -5px;
+            padding-right: 5px;
           }
         
         &.responsive {
@@ -299,13 +313,15 @@ hr {
 
             & a.topnav__icon {
                 position: absolute;
-                right: 0;
+                right: 5px;
                 top: 0;
               }
 
               & a {
                 float: none;
                 display: block;
+                padding: 16px 0;
+
               }
           
               & .topnav__dropdown {
@@ -314,6 +330,7 @@ hr {
 
               & .topnav__dropdown-content {
                   position: relative;
+                  border-radius: 0;
               }
               
               & .topnav__dropdown .topnav__dropbtn {

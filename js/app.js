@@ -9,7 +9,6 @@ const icon = document.querySelector('.topnav__icon');
 const nav = document.getElementById("myTopnav");
 const dropbtn = document.querySelectorAll('.topnav__dropbtn');
 const dropcontent = document.querySelectorAll('.topnav__dropdown-content');
-const carrot = document.querySelectorAll('.topnav__carrot');
 
 dropbtn.forEach(el => el.addEventListener('click', function() {
   el.nextElementSibling.classList.toggle('topnav__dropdown-content--is-visible');
@@ -68,10 +67,11 @@ function throttle(fn, wait) {
 
 const orange = '#EE6352';
 const inputs = document.querySelectorAll('input');
+// const input = document.querySelector('input');
 const labels = document.querySelectorAll('label');
 const textareas = document.querySelectorAll('textarea');
 const form = document.querySelector('form');
-const main = document.querySelector('main');
+const main = document.querySelector('main#maincontent');
 
 inputs.forEach(input => input.addEventListener('focus', () => {
   labels.forEach(label => {
@@ -79,7 +79,7 @@ inputs.forEach(input => input.addEventListener('focus', () => {
   });
   if (document.activeElement){
     input.previousElementSibling.style.color = orange;
-  }
+  } 
 }))
 
 textareas.forEach(textarea => textarea.addEventListener('focus', () => {
@@ -91,10 +91,16 @@ textareas.forEach(textarea => textarea.addEventListener('focus', () => {
   }
 }))
 
+// document.addEventListener('click', function(e) {
+// console.log(e.target)
+// if(e.target === form || e.target === main){
+//   labels.forEach(el => el.style.color ='black')
+// }
+// });
+
 document.addEventListener('click', function(e){
-  if(e.target === form || e.target === main){
-    labels.forEach(label => {
-      label.style.color = 'black';
-    });
-  }
+console.log(e.target.className)
+if(e.target.className !== 'input'){
+  labels.forEach(label => label.style.color = 'black')
+}
 })

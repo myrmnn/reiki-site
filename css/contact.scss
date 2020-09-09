@@ -59,10 +59,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1.5em 0;
+    margin: 4em 0;
     padding: .25em;
     font-weight: 600;
-    background-color: rgba(210, 232, 252, .5);
+    background-color: rgba(95,158,160, .2);
     background-image: url('/img/world.png');
     background-blend-mode: lighten;
     background-position: center;
@@ -91,16 +91,49 @@
     }
 }
 
+//rates
+
+.rates {
+    background: $secondaryBlue;
+    max-width: 1000px;
+    margin: 4em auto;
+    box-shadow: 2px 4px 6px rgba(0,0,0,0.2);
+
+
+    &__first-col {
+        background-image: linear-gradient(to right, white, $secondaryBlue);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__title {
+        padding: .5em;
+        color: black;
+    }
+
+    &__lead{
+        font-size: 1.2rem;
+    }
+
+    &__second-col {
+        background-image: linear-gradient(to right, white, $secondaryBlue);
+
+        @media screen and (min-width: $tablet){
+               background-image: linear-gradient(to left, white, $secondaryBlue);
+        }
+    }
+}
+
 //contact
 
-.contact-section{
-    margin: 0 auto;
-
-    &__wrapper {
+.contact-section {
         max-width: 700px;
+        margin: 4em auto;
         min-width: 300px;
         border: 1px solid $primaryBlue;
-    }
+    
 
     &__company-info {
         background-color: rgba(210, 232, 252, .7);;
@@ -168,8 +201,25 @@
             outline-color: $orange;
         }
     }
-    
- 
+}
+
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.column{
+    flex-basis: 100%;
+
+    @media (min-width: $tablet){
+        flex-basis: 50%;
+        // margin: 2%;
+
+    }
 }
 
 @keyframes slideUp {
