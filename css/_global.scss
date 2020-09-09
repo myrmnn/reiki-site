@@ -139,6 +139,12 @@ hr {
 }
 
 
+@keyframes fadeIn {
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
 
 //logo
 .logo {
@@ -161,7 +167,14 @@ hr {
         min-width: 320px;
         margin: 0 auto;
         border-radius: 5px;
+<<<<<<< HEAD
         box-shadow: 2px 3px 4px rgba(0,0,0,0.2);
+=======
+        box-shadow: 1px 3px 4px rgba(83, 43, 6, 0.2);
+        opacity: 0;
+        transform: scale(.98);
+        animation: fadeIn 3s ease forwards;
+>>>>>>> 286003e24f3f2a0d98fe495619cc16edeb27ca09
 
         @media screen and (max-width: 700px){
         border-radius: 0;

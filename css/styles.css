@@ -142,6 +142,22 @@ hr {
   background-color: #56b6df;
 }
 
+@-webkit-keyframes fadeIn {
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 .logo {
   background-color: white;
   position: relative;
@@ -171,8 +187,18 @@ hr {
   min-width: 320px;
   margin: 0 auto;
   border-radius: 5px;
+<<<<<<< HEAD
   -webkit-box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.2);
           box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.2);
+=======
+  -webkit-box-shadow: 1px 3px 4px rgba(83, 43, 6, 0.2);
+          box-shadow: 1px 3px 4px rgba(83, 43, 6, 0.2);
+  opacity: 0;
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+  -webkit-animation: fadeIn 3s ease forwards;
+          animation: fadeIn 3s ease forwards;
+>>>>>>> 286003e24f3f2a0d98fe495619cc16edeb27ca09
 }
 
 @media screen and (max-width: 700px) {
