@@ -423,7 +423,7 @@ hr {
 .hero {
   overflow: hidden;
   background-image: url("../img/breathe.png");
-  opacity: .8;
+  opacity: 0.8;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -479,17 +479,6 @@ hr {
   .hero__text {
     margin-top: 25px;
   }
-}
-
-.welcome__title {
-  padding: .25em;
-  background-color: #d2e8fc;
-  -webkit-box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.2);
-          box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.2);
-}
-
-.welcome__subtitle {
-  padding: 1em;
 }
 
 .lead {
