@@ -216,7 +216,7 @@
 .contact-section input:focus, .contact-section input:focus,
 .contact-section textarea:focus,
 .contact-section textarea:focus {
-  outline-color: #EE6352;
+  outline-color: #ee6352;
 }
 
 .row {

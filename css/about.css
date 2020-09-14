@@ -35,7 +35,7 @@
 }
 
 .about__link {
-  color: #EE6352;
+  color: #ee6352;
 }
 
 .profile-img {
@@ -48,6 +48,13 @@
   border-radius: 5px;
   -webkit-box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
           box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+  width: 90%;
+}
+
+@media screen and (min-width: 437px) {
+  .profile-img img {
+    width: auto;
+  }
 }
 
 .quote {

@@ -67,7 +67,7 @@
 .intake input:focus, .intake input:focus,
 .intake textarea:focus,
 .intake textarea:focus {
-  outline-color: #EE6352;
+  outline-color: #ee6352;
 }
 
 @media screen and (min-width: 768px) {
@@ -90,6 +90,6 @@
 .intake q,
 .intake span {
   font-weight: 700;
-  color: #EE6352;
+  color: #ee6352;
 }
 /*# sourceMappingURL=form.css.map */
