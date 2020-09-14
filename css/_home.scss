@@ -44,6 +44,18 @@
 	}
 }
 
+.welcome {
+	background-color: $secondaryBlue;
+
+	&__title {
+		padding: 0.25em;
+		box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.2);
+	}
+	&__subtitle {
+		padding: 1em;
+	}
+}
+
 .lead {
 	width: 90%;
 	margin: 0 auto;
