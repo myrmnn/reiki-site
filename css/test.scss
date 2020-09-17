@@ -1,39 +1,38 @@
-@import
-'variables';
+@import "variables";
 
-body{
-    background-image: url("../img/mountain.jpeg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
+body {
+  background-image: url("../img/mountain.jpeg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
 }
 
 .page-subtitle {
-    padding-bottom: 10px;
-    font-family: $bodyFont;
-    font-size: 1.2rem;
+  padding-bottom: 10px;
+  font-family: $bodyFont;
+  font-size: 1.2rem;
 }
 
 .testimonial {
-    background-color: white;
-    margin: 6em auto;
-    box-shadow: 0 0 .2em #00b2e7;
-    max-width: 800px;
-    padding-bottom: 1em;
+  background-color: white;
+  margin: 6em auto;
+  box-shadow: 0 0 0.2em #00b2e7;
+  max-width: 800px;
+  padding-bottom: 1em;
 
-        @media screen and (min-width: $tablet) {
-            border-radius: 10px;
-            width: 70%;
-            padding: 1em;
-        }
+  @media screen and (min-width: $tablet) {
+    border-radius: 10px;
+    width: 70%;
+    padding: 1em;
+  }
 
-    &__img {
-        width: 100px;
-        padding: 2em 0;
+  &__img {
+    width: 100px;
+    padding: 2em 0;
 
-        @media screen and (min-width: $tablet) {
-            width: 125px;
-        }
-    }      
+    @media screen and (min-width: $tablet) {
+      width: 125px;
+    }
+  }
 }
