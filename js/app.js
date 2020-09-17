@@ -9,6 +9,7 @@ const icon = document.querySelector(".topnav__icon");
 const nav = document.getElementById("myTopnav");
 const dropbtn = document.querySelectorAll(".topnav__dropbtn");
 const dropcontent = document.querySelectorAll(".topnav__dropdown-content");
+const dropLink = document.querySelectorAll(".topnav__dropdown-content a");
 
 dropbtn.forEach((el) =>
   el.addEventListener("click", function () {
@@ -18,6 +19,18 @@ dropbtn.forEach((el) =>
     el.firstElementChild.classList.toggle("rotate");
   })
 );
+
+dropLink.forEach((el) => {
+  el.addEventListener("click", () => {
+    el.parentElement.classList.remove("topnav__dropdown-content--is-visible");
+    el.parentElement.parentElement.firstElementChild.firstElementChild.classList.toggle(
+      "rotate"
+    );
+    if (nav.classList.contains("responsive")) {
+      nav.classList.remove("responsive");
+    }
+  });
+});
 
 icon.addEventListener("click", function () {
   nav.classList.toggle("responsive");
@@ -106,16 +119,12 @@ document.addEventListener("click", function (e) {
   }
 });
 
-//back to top button
+// back to top button
 
-var topBtn = document.querySelector(".top-btn");
 var offset = document.body.scrollHeight / 4;
+var topBtn = document.querySelector(".top-btn");
 
 window.addEventListener("scroll", throttle(backToTop, 500));
-
-topBtn.addEventListener("click", function () {
-  document.body.scrollTop = 0;
-});
 
 function backToTop() {
   var scrollPos = document.body.scrollTop || document.documentElement.scrollTop;
@@ -125,3 +134,7 @@ function backToTop() {
     topBtn.classList.remove("top-btn--visible");
   }
 }
+
+topBtn.addEventListener("click", function () {
+  document.body.scrollTop = 0;
+});

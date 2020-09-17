@@ -133,12 +133,12 @@ hr {
   font-size: 1.5rem;
   background: transparent;
   color: $orange;
-  cursor: pointer;
 
   &:focus,
   &:active,
   &:hover {
     color: darken($orange, 15%);
+    cursor: pointer;
   }
 
   @media screen and (min-width: 800px) {
@@ -146,7 +146,7 @@ hr {
   }
 
   &--visible {
-    opacity: 0.5;
+    opacity: 0.7;
   }
 }
 
