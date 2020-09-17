@@ -21,7 +21,7 @@
 
 @media only screen and (min-width: 768px) {
   .about__para {
-    padding: 2em;
+    padding: 1em 2em;
     text-align: center;
   }
 }
@@ -32,6 +32,10 @@
   display: block;
   width: 100%;
   margin: 0 auto;
+  color: #56b6df;
+  font-family: "The Girl Next Door", cursive;
+  font-weight: bold;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 .about__link {
