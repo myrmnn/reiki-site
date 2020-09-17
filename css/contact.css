@@ -1,12 +1,12 @@
 .heart {
-  opacity: .7;
+  opacity: 0.7;
   position: relative;
   height: 100px;
   width: 100px;
   margin: 10px auto;
   background: whitesmoke;
   border-radius: 50%;
-  border: 2px solid #2ba3d7;
+  border: 2px solid #e93924;
   -webkit-box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
           box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
 }
@@ -17,8 +17,7 @@
   position: absolute;
   height: 60px;
   width: 40px;
-  background: #b83f3f;
-  background: #2ba3d7;
+  background: #e93924;
   border-radius: 50px 50px 0 0;
 }
 
@@ -65,7 +64,7 @@
       -ms-flex-align: center;
           align-items: center;
   margin: 4em 0;
-  padding: .25em;
+  padding: 0.25em;
   font-weight: 600;
   background-color: rgba(95, 158, 160, 0.2);
   background-image: url("/img/world.png");
@@ -89,12 +88,12 @@
 
 .notice__message span {
   color: #e93924;
-  opacity: .7;
+  opacity: 0.7;
   display: block;
   background: white;
   font-weight: 600;
-  padding: .25em;
-  margin: .5em 0;
+  padding: 0.25em;
+  margin: 0.5em 0;
   border-radius: 5px;
   -webkit-box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
           box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
@@ -127,7 +126,7 @@
 }
 
 .rates__title {
-  padding: .5em;
+  padding: 0.5em;
   color: black;
 }
 
@@ -167,7 +166,7 @@
   color: #56b6df;
   padding: 1em;
   background: white;
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .contact-section__ul {
@@ -195,7 +194,7 @@
 .contact-section label {
   margin-bottom: 1em;
   display: block;
-  padding: .25em;
+  padding: 0.25em;
   font-size: 1.3rem;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
@@ -204,7 +203,7 @@
 .contact-section input,
 .contact-section textarea {
   margin-bottom: 1em;
-  padding: .25em;
+  padding: 0.25em;
   font-size: 1.1rem;
   text-align: center;
   -webkit-transition: all 1s ease;
