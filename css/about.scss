@@ -1,63 +1,63 @@
-@import "variables";
+@import 'variables';
 
 .about {
-  margin: 0 auto;
-  background-color: white;
+	margin: 0 auto;
+	background-color: white;
 
-  @media only screen and (min-width: 600px) {
-    max-width: 1200px;
-  }
+	@media only screen and (min-width: 600px) {
+		max-width: 1200px;
+	}
 
-  &__para {
-    text-align: justify;
-    padding: 1em;
-    background-image: linear-gradient(to bottom, ivory, rgb(199, 240, 240));
-    max-width: 1200px;
-    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+	&__para {
+		text-align: justify;
+		padding: 1em;
+		background-image: linear-gradient(to bottom, $secondaryBlue, ivory);
+		max-width: 1200px;
+		box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
 
-    @media only screen and (min-width: $tablet) {
-      padding: 2em;
-      text-align: center;
-    }
-  }
+		@media only screen and (min-width: $tablet) {
+			padding: 2em;
+			text-align: center;
+		}
+	}
 
-  &__span {
-    font-size: 1.5em;
-    text-align: center;
-    display: block;
-    width: 100%;
-    margin: 0 auto;
-  }
+	&__span {
+		font-size: 1.5em;
+		text-align: center;
+		display: block;
+		width: 100%;
+		margin: 0 auto;
+	}
 
-  &__link {
-    color: $orange;
-  }
+	&__link {
+		color: $orange;
+	}
 }
 
 .profile-img {
-  padding: 0;
-  margin-top: 6em;
-  padding-bottom: 2em;
+	padding: 0;
+	margin-top: 2em;
+	padding-bottom: 2em;
 
-  & img {
-    border-radius: 5px;
-    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
-    width: 90%;
+	& img {
+		border-radius: 5px;
+		box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+		width: 90%;
 
-    @media screen and (min-width: 437px) {
-      width: auto;
-    }
-  }
+		@media screen and (min-width: 437px) {
+			width: auto;
+		}
+	}
 }
 
 .quote {
-  color: indianred;
-  font-style: italic;
-  font-size: 1.4em;
+	color: indianred;
+	font-style: italic;
+	font-size: 1.4em;
 }
 
 .chakra-img {
-  width: 125px;
-  margin: 1em auto;
-  display: block;
+	width: 125px;
+	margin: 1em auto;
+	display: block;
 }
