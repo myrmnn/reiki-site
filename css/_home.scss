@@ -3,30 +3,34 @@
 .hero {
   background-color: $secondaryBlue;
   position: relative;
-
+  width: 100%;
+  //   overflow: hidden;
   &__img {
+    // position: relative;
     margin: 0;
     padding: 0;
     width: 100%;
     height: 300px;
-    overflow-x: hidden;
+    // overflow-x: hidden;
 
     @media only screen and (min-width: $tablet) {
       height: 400px;
     }
   }
-
-  &__text {
+  &__container-text {
     position: absolute;
-    top: 40%;
     left: 50%;
-    transform: translate(-50%, -40%);
+    top: 30%;
+    transform: translate(-50%, -30%);
+  }
+  &__text {
     font-size: 3rem;
     font-family: $bodyFont;
     font-style: italic;
-    animation: sk-scaleout 11s infinite linear;
+    animation: breathe 11s infinite linear;
     color: $primaryBlue;
-    border-radius: 100%;
+    z-index: 100;
+    overflow: hidden;
 
     @media only screen and (min-width: $tablet) {
       font-size: 3.5rem;

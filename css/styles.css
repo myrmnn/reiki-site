@@ -463,6 +463,7 @@ hr {
 .hero {
   background-color: #d2e8fc;
   position: relative;
+  width: 100%;
 }
 
 .hero__img {
@@ -470,7 +471,6 @@ hr {
   padding: 0;
   width: 100%;
   height: 300px;
-  overflow-x: hidden;
 }
 
 @media only screen and (min-width: 768px) {
@@ -479,19 +479,23 @@ hr {
   }
 }
 
-.hero__text {
+.hero__container-text {
   position: absolute;
-  top: 40%;
   left: 50%;
-  -webkit-transform: translate(-50%, -40%);
-          transform: translate(-50%, -40%);
+  top: 30%;
+  -webkit-transform: translate(-50%, -30%);
+          transform: translate(-50%, -30%);
+}
+
+.hero__text {
   font-size: 3rem;
   font-family: "Buda", cursive;
   font-style: italic;
-  -webkit-animation: sk-scaleout 11s infinite linear;
-          animation: sk-scaleout 11s infinite linear;
+  -webkit-animation: breathe 11s infinite linear;
+          animation: breathe 11s infinite linear;
   color: #56b6df;
-  border-radius: 100%;
+  z-index: 100;
+  overflow: hidden;
 }
 
 @media only screen and (min-width: 768px) {
