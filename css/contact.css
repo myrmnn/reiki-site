@@ -13,7 +13,7 @@
 
 .heart::before,
 .heart::after {
-  content: "";
+  content: '';
   position: absolute;
   height: 60px;
   width: 40px;
@@ -101,28 +101,10 @@
 
 .rates {
   background: #d2e8fc;
-  max-width: 1000px;
+  max-width: 700px;
   margin: 4em auto;
   -webkit-box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
           box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
-}
-
-.rates__first-col {
-  background-image: -webkit-gradient(linear, left top, right top, from(white), to(#d2e8fc));
-  background-image: linear-gradient(to right, white, #d2e8fc);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .rates__title {
@@ -132,18 +114,6 @@
 
 .rates__lead {
   font-size: 1.2rem;
-}
-
-.rates__second-col {
-  background-image: -webkit-gradient(linear, left top, right top, from(white), to(#d2e8fc));
-  background-image: linear-gradient(to right, white, #d2e8fc);
-}
-
-@media screen and (min-width: 768px) {
-  .rates__second-col {
-    background-image: -webkit-gradient(linear, right top, left top, from(white), to(#d2e8fc));
-    background-image: linear-gradient(to left, white, #d2e8fc);
-  }
 }
 
 .contact-section {
@@ -216,36 +186,6 @@
 .contact-section textarea:focus,
 .contact-section textarea:focus {
   outline-color: #ee6352;
-}
-
-.row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.column {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-}
-
-@media (min-width: 768px) {
-  .column {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
-  }
 }
 
 @-webkit-keyframes slideUp {

@@ -12,8 +12,8 @@
 .about__para {
   text-align: justify;
   padding: 1em;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(ivory), to(#c7f0f0));
-  background-image: linear-gradient(to bottom, ivory, #c7f0f0);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d2e8fc), to(ivory));
+  background-image: linear-gradient(to bottom, #d2e8fc, ivory);
   max-width: 1200px;
   -webkit-box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
           box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
@@ -21,7 +21,7 @@
 
 @media only screen and (min-width: 768px) {
   .about__para {
-    padding: 2em;
+    padding: 1em 2em;
     text-align: center;
   }
 }
@@ -32,6 +32,10 @@
   display: block;
   width: 100%;
   margin: 0 auto;
+  color: #56b6df;
+  font-family: "The Girl Next Door", cursive;
+  font-weight: bold;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 .about__link {
@@ -40,7 +44,7 @@
 
 .profile-img {
   padding: 0;
-  margin-top: 6em;
+  margin-top: 2em;
   padding-bottom: 2em;
 }
 
