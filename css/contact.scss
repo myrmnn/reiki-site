@@ -1,184 +1,184 @@
-@import 'variables';
+@import "variables";
 
 //heart boxes
 .heart {
-	opacity: 0.7;
-	position: relative;
-	height: 100px;
-	width: 100px;
-	margin: 10px auto;
-	background: whitesmoke;
-	border-radius: 50%;
-	border: 2px solid darken($orange, 10%);
-	box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+  opacity: 0.7;
+  position: relative;
+  height: 100px;
+  width: 100px;
+  margin: 10px auto;
+  background: whitesmoke;
+  border-radius: 50%;
+  border: 2px solid darken($orange, 10%);
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .heart::before,
 .heart::after {
-	content: '';
-	position: absolute;
-	height: 60px;
-	width: 40px;
-	background: darken($orange, 10%);
-	border-radius: 50px 50px 0 0;
+  content: "";
+  position: absolute;
+  height: 60px;
+  width: 40px;
+  background: darken($orange, 10%);
+  border-radius: 50px 50px 0 0;
 }
 
 .heart::before {
-	left: 48px;
-	top: 23px;
-	transform: rotate(-45deg);
-	transform-origin: 0 100%;
+  left: 48px;
+  top: 23px;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
 }
 
 .heart::after {
-	left: 9px;
-	top: 23px;
-	transform: rotate(45deg);
-	transform-origin: 100% 100%;
+  left: 9px;
+  top: 23px;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
 }
 
 //notices
 
 .notice {
-	background-color: white;
-	max-width: 700px;
-	min-width: 300px;
-	margin: 0 auto;
+  background-color: white;
+  max-width: 700px;
+  min-width: 300px;
+  margin: 0 auto;
 }
 
 .notice__title {
-	color: black;
-	font-size: 2em;
-	padding-top: 0;
-	margin-top: 1em;
+  color: black;
+  font-size: 2em;
+  padding-top: 0;
+  margin-top: 1em;
 }
 
 .notice__message {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 4em 0;
-	padding: 0.25em;
-	font-weight: 600;
-	background-color: rgba(95, 158, 160, 0.2);
-	background-image: url('/img/world.png');
-	background-blend-mode: lighten;
-	background-position: center;
-	background-repeat: no-repeat;
-	box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
-	opacity: 0;
-	transform: translatey(-50px);
-	animation: slideUp 2s ease forwards;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4em 0;
+  padding: 0.25em;
+  font-weight: 600;
+  background-color: rgba(95, 158, 160, 0.2);
+  background-image: url("/img/world.png");
+  background-blend-mode: lighten;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transform: translatey(-50px);
+  animation: slideUp 2s ease forwards;
 
-	@media screen and (min-width: 500px) {
-		padding: 2.7em;
-	}
+  @media screen and (min-width: 500px) {
+    padding: 2.7em;
+  }
 
-	& span {
-		color: darken($orange, 10%);
-		opacity: 0.7;
-		display: block;
-		background: white;
-		font-weight: 600;
-		padding: 0.25em;
-		margin: 0.5em 0;
-		border-radius: 5px;
-		box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
-	}
+  & span {
+    color: darken($orange, 10%);
+    opacity: 0.7;
+    display: block;
+    background: white;
+    font-weight: 600;
+    padding: 0.25em;
+    margin: 0.5em 0;
+    border-radius: 5px;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+  }
 }
 
 //rates
 
 .rates {
-	background: $secondaryBlue;
-	max-width: 700px;
-	margin: 4em auto;
-	box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+  background: $secondaryBlue;
+  max-width: 700px;
+  margin: 4em auto;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
 
-	&__title {
-		padding: 0.5em;
-		color: black;
-	}
+  &__title {
+    padding: 0.5em;
+    color: black;
+  }
 
-	&__lead {
-		font-size: 1.2rem;
-	}
+  &__lead {
+    font-size: 1.2rem;
+  }
 }
 
 //contact
 
 .contact-section {
-	max-width: 700px;
-	margin: 4em auto;
-	min-width: 300px;
-	border: 1px solid $primaryBlue;
+  max-width: 700px;
+  margin: 4em auto;
+  min-width: 300px;
+  border: 1px solid $primaryBlue;
 
-	&__company-info {
-		background-color: rgba(210, 232, 252, 0.7);
-		background-repeat: no-repeat;
-		background-image: url('/img/lotus-flower\ \(2\).png');
-		background-position-y: 85px;
-		background-position-x: 50%;
-		background-blend-mode: lighten;
-	}
+  &__company-info {
+    background-color: rgba(210, 232, 252, 0.7);
+    background-repeat: no-repeat;
+    background-image: url("/img/blue-lotus.png");
+    background-position-y: 65px;
+    background-position-x: 50%;
+    background-blend-mode: lighten;
+  }
 
-	&__heading {
-		color: $primaryBlue;
-		padding: 1em;
-		background: white;
-		opacity: 0.7;
-	}
+  &__heading {
+    color: $primaryBlue;
+    padding: 1em;
+    background: white;
+    opacity: 0.7;
+  }
 
-	&__ul {
-		font-size: 1.2em;
-		list-style: none;
-		padding: 1em;
+  &__ul {
+    font-size: 1.2em;
+    list-style: none;
+    padding: 1em;
 
-		& a {
-			text-decoration: none;
-			color: black;
-		}
-	}
+    & a {
+      text-decoration: none;
+      color: black;
+    }
+  }
 
-	&__icon {
-		font-size: 2.5rem;
-		margin-bottom: 1.5rem;
-	}
+  &__icon {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
 
-	&__links {
-		margin-bottom: 1.5em;
-		font-weight: 600;
-		font-size: 1.5rem;
-	}
+  &__links {
+    margin-bottom: 1.5em;
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
 
-	& label {
-		margin-bottom: 1em;
-		display: block;
-		padding: 0.25em;
-		font-size: 1.3rem;
-		transition: all 1s ease;
-	}
+  & label {
+    margin-bottom: 1em;
+    display: block;
+    padding: 0.25em;
+    font-size: 1.3rem;
+    transition: all 1s ease;
+  }
 
-	& input,
-	& textarea {
-		margin-bottom: 1em;
-		padding: 0.25em;
-		font-size: 1.1rem;
-		text-align: center;
-		transition: all 1s ease;
-		font-family: $bodyFont;
-		width: 80%;
+  & input,
+  & textarea {
+    margin-bottom: 1em;
+    padding: 0.25em;
+    font-size: 1.1rem;
+    text-align: center;
+    transition: all 1s ease;
+    font-family: $bodyFont;
+    width: 80%;
 
-		&:focus,
-		&:focus {
-			outline-color: $orange;
-		}
-	}
+    &:focus,
+    &:focus {
+      outline-color: $orange;
+    }
+  }
 }
 
 @keyframes slideUp {
-	100% {
-		transform: translatey(0);
-		opacity: 1;
-	}
+  100% {
+    transform: translatey(0);
+    opacity: 1;
+  }
 }

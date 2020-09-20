@@ -1,3 +1,13 @@
+@font-face {
+  font-family: girlNextDoor;
+  src: url(TheGirlNextDoor-Regular.ttf);
+}
+
+@font-face {
+  font-family: Buda;
+  src: url(Buda-Light.ttf);
+}
+
 body {
   background-image: url(../img/mountain.jpeg);
   background-attachment: fixed;

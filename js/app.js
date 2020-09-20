@@ -52,7 +52,6 @@ window.addEventListener("scroll", throttle(calcCaller, 200));
 
 function calculate(el) {
   if (window.pageYOffset + browserHeight > el.offsetTop) {
-    console.log("calculated");
     let scrollPercent = (el.getBoundingClientRect().y / browserHeight) * 100;
     if (scrollPercent < 90) {
       el.classList.add("hidden-item--now-visible");
@@ -62,7 +61,6 @@ function calculate(el) {
 }
 
 function calcCaller() {
-  console.log("scrolled");
   itemsToReveal.forEach((el) => {
     if (el.isRevealed == false) {
       calculate(el);
@@ -117,24 +115,4 @@ document.addEventListener("click", function (e) {
   if (e.target.className !== "input") {
     labels.forEach((label) => (label.style.color = "black"));
   }
-});
-
-// back to top button
-
-var offset = document.body.scrollHeight / 4;
-var topBtn = document.querySelector(".top-btn");
-
-window.addEventListener("scroll", throttle(backToTop, 500));
-
-function backToTop() {
-  var scrollPos = document.body.scrollTop || document.documentElement.scrollTop;
-  if (scrollPos > offset) {
-    topBtn.classList.add("top-btn--visible");
-  } else {
-    topBtn.classList.remove("top-btn--visible");
-  }
-}
-
-topBtn.addEventListener("click", function () {
-  document.body.scrollTop = 0;
 });

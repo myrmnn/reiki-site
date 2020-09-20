@@ -1,3 +1,13 @@
+@font-face {
+  font-family: girlNextDoor;
+  src: url(TheGirlNextDoor-Regular.ttf);
+}
+
+@font-face {
+  font-family: Buda;
+  src: url(Buda-Light.ttf);
+}
+
 .intake {
   margin: 3em auto;
   background-color: white;
@@ -26,7 +36,7 @@
 .intake label {
   margin-bottom: 1em;
   display: block;
-  padding: .25em;
+  padding: 0.25em;
   font-size: 1.3rem;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
@@ -35,12 +45,12 @@
 .intake input,
 .intake textarea {
   margin-bottom: 1em;
-  padding: .25em;
+  padding: 0.25em;
   font-size: 1.1rem;
   text-align: center;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
-  font-family: "Buda", cursive;
+  font-family: Buda, sans-serif;
   width: 80%;
 }
 
@@ -79,7 +89,7 @@
 
 .intake textarea {
   margin-top: 1.3em;
-  font-family: "Buda", cursive;
+  font-family: Buda, sans-serif;
   font-size: 1.3rem;
 }
 

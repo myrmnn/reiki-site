@@ -1,3 +1,13 @@
+@font-face {
+  font-family: girlNextDoor;
+  src: url(TheGirlNextDoor-Regular.ttf);
+}
+
+@font-face {
+  font-family: Buda;
+  src: url(Buda-Light.ttf);
+}
+
 .about {
   margin: 0 auto;
   background-color: white;
@@ -33,7 +43,7 @@
   width: 100%;
   margin: 0 auto;
   color: #56b6df;
-  font-family: "The Girl Next Door", cursive;
+  font-family: girlNextDoor, serif;
   font-weight: bold;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
 }

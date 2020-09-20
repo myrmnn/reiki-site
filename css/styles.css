@@ -1,5 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Buda:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=The+Girl+Next+Door&display=swap");
+@font-face {
+  font-family: girlNextDoor;
+  src: url(TheGirlNextDoor-Regular.ttf);
+}
+
+@font-face {
+  font-family: Buda;
+  src: url(Buda-Light.ttf);
+}
+
 .dropdown-is-visible {
   display: block;
 }
@@ -60,13 +68,13 @@ article {
 
 body {
   overflow-x: auto;
-  font-family: "Buda", cursive;
+  font-family: Buda, sans-serif;
   text-align: center;
 }
 
 @media only screen and (min-width: 300px) and (max-width: 320px) {
   .page-titles {
-    font-family: "The Girl Next Door", cursive;
+    font-family: girlNextDoor, serif;
     font-size: 1em;
     background: white;
     width: 100%;
@@ -75,12 +83,12 @@ body {
 
 h1 {
   font-size: 1.5em;
-  font-family: "The Girl Next Door", cursive;
+  font-family: girlNextDoor, serif;
   padding: 0.5em;
 }
 
 h1 a {
-  color: "Buda", cursive;
+  color: Buda, sans-serif;
   text-decoration: none;
 }
 
@@ -97,7 +105,7 @@ h3 {
 }
 
 .page-titles {
-  font-family: "The Girl Next Door", cursive;
+  font-family: girlNextDoor, serif;
   font-size: 1rem;
   padding: 0.25em;
   background: #d2e8fc;
@@ -160,7 +168,7 @@ hr {
   border-radius: 15px;
   -webkit-box-shadow: 1px 2px silver;
   box-shadow: 1px 2px silver;
-  font-family: "Buda", cursive;
+  font-family: Buda, sans-serif;
   font-size: 1.2em;
   font-weight: 200;
   letter-spacing: 1px;
@@ -201,6 +209,10 @@ hr {
   }
 }
 
+.logo__link {
+  color: whitesmoke;
+}
+
 .logo__container {
   position: relative;
   height: 120px;
@@ -238,7 +250,6 @@ hr {
 
 .logo__img {
   width: 70px;
-  height: 70px;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -261,10 +272,10 @@ hr {
 
 .logo__title {
   font-size: 1.4rem;
-  margin-left: 45px;
   color: whitesmoke;
+  margin-left: 45px;
   font-style: italic;
-  font-family: "The Girl Next Door", cursive;
+  font-family: girlNextDoor, serif;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
 }
 
@@ -405,6 +416,7 @@ hr {
   }
   .topnav.responsive .topnav__dropdown .topnav__dropbtn {
     display: block;
+    margin: 10px;
     width: 100%;
   }
 }
@@ -451,6 +463,7 @@ hr {
 .footer li {
   overflow: hidden;
   list-style: none;
+  margin: 4px;
 }
 
 .footer a {
@@ -470,13 +483,6 @@ hr {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 300px;
-}
-
-@media only screen and (min-width: 768px) {
-  .hero__img {
-    height: 400px;
-  }
 }
 
 .hero__container-text {
@@ -488,8 +494,8 @@ hr {
 }
 
 .hero__text {
-  font-size: 3rem;
-  font-family: "Buda", cursive;
+  font-size: 2rem;
+  font-family: Buda, sans-serif;
   font-style: italic;
   -webkit-animation: breathe 11s infinite linear;
           animation: breathe 11s infinite linear;

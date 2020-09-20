@@ -1,3 +1,13 @@
+@font-face {
+  font-family: girlNextDoor;
+  src: url(TheGirlNextDoor-Regular.ttf);
+}
+
+@font-face {
+  font-family: Buda;
+  src: url(Buda-Light.ttf);
+}
+
 .heart {
   opacity: 0.7;
   position: relative;
@@ -13,7 +23,7 @@
 
 .heart::before,
 .heart::after {
-  content: '';
+  content: "";
   position: absolute;
   height: 60px;
   width: 40px;
@@ -126,8 +136,8 @@
 .contact-section__company-info {
   background-color: rgba(210, 232, 252, 0.7);
   background-repeat: no-repeat;
-  background-image: url("/img/lotus-flower (2).png");
-  background-position-y: 85px;
+  background-image: url("/img/blue-lotus.png");
+  background-position-y: 65px;
   background-position-x: 50%;
   background-blend-mode: lighten;
 }
@@ -178,7 +188,7 @@
   text-align: center;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
-  font-family: "Buda", cursive;
+  font-family: Buda, sans-serif;
   width: 80%;
 }
 
