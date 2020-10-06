@@ -389,10 +389,11 @@ hr {
 //footer
 .footer {
   background: white;
-  padding: 2em;
+  padding: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: column;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -417,7 +418,7 @@ hr {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column;
+    flex-wrap: wrap;
     -webkit-box-pack: space-evenly;
     -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
