@@ -66,6 +66,10 @@ article {
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: auto;
   font-family: Buda, sans-serif;
